@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (optional - uncomment if you don't want to commit data)
+# data/database/
+# data/csv/*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints

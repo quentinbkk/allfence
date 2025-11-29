@@ -104,7 +104,13 @@ def create_d(n: int, club_no: int):
 # running
 df = create_d(1000, 5)
 
-df.to_csv("synth_data.csv")
+# Save to csv directory
+import os
+csv_dir = os.path.join(os.path.dirname(__file__), "csv")
+os.makedirs(csv_dir, exist_ok=True)
+csv_path = os.path.join(csv_dir, "synth_data.csv")
+df.to_csv(csv_path)
+print(f"Saved synthetic data to: {csv_path}")
 
 
 
