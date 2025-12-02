@@ -95,11 +95,11 @@ python tests/quick_test.py
 
 ## Features
 
-- ✅ Database models for Fencers, Clubs, Rankings, Tournaments
-- ✅ Automatic bracket assignment based on age
-- ✅ Tournament management with weighted point system
-- ✅ CSV import for fencers and tournament results
-- ✅ Comprehensive test suite
+- Database models for Fencers, Clubs, Rankings, Tournaments
+- Automatic bracket assignment based on age
+- Tournament management with weighted point system
+- CSV import for fencers and tournament results
+- Comprehensive test suite
 
 ## Documentation
 
