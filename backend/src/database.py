@@ -89,7 +89,8 @@ def init_db():
     try:
         # Create all tables defined in Base (all our models)
         Base.metadata.create_all(bind=engine)
-        logger.info(f"Database initialized successfully at {db_path}")
+        db_location = DATABASE_URL if not is_sqlite else db_path
+        logger.info(f"Database initialized successfully at {db_location}")
     except Exception as e:
         logger.error(f"Error initializing database: {e}")
         raise

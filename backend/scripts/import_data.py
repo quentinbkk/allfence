@@ -17,11 +17,22 @@ from src.database import get_session, init_db
 from src.models import Club, Fencer, Ranking, Tournament, TournamentResult, User, Season
 
 
-def import_data():
-    """Import all data from JSON files to PostgreSQL."""
+def import_data(drop_existing=False):
+    """Import all data from JSON files to PostgreSQL.
+    
+    Args:
+        drop_existing: If True, drop all existing tables before import
+    """
     
     # Initialize database (create tables)
     print("\n🗄️  Initializing PostgreSQL database...\n")
+    
+    if drop_existing:
+        from src.database import Base, engine
+        print("⚠️  Dropping all existing tables...")
+        Base.metadata.drop_all(engine)
+        print("✓ All tables dropped\n")
+    
     init_db()
     
     session = get_session()
@@ -42,6 +53,8 @@ def import_data():
             clubs_data = json.load(f)
         
         for club_dict in clubs_data:
+            # Remove computed fields that aren't database columns
+            club_dict.pop('fencer_count', None)
             club = Club(**club_dict)
             session.merge(club)
         session.commit()
@@ -56,6 +69,14 @@ def import_data():
             # Convert date strings to date objects
             if fencer_dict.get('dob'):
                 fencer_dict['dob'] = datetime.fromisoformat(fencer_dict['dob']).date()
+            
+            # Remove computed fields that aren't database columns
+            fencer_dict.pop('full_name', None)
+            fencer_dict.pop('age', None)
+            fencer_dict.pop('bracket', None)
+            fencer_dict.pop('club_name', None)
+            fencer_dict.pop('rankings', None)
+            fencer_dict.pop('total_points', None)
             
             fencer = Fencer(**fencer_dict)
             session.merge(fencer)
@@ -73,7 +94,13 @@ def import_data():
             if season_dict.get('end_date'):
                 season_dict['end_date'] = datetime.fromisoformat(season_dict['end_date']).date()
             
+            # Remove computed fields and auto-generated ID
+            season_dict.pop('tournament_count', None)
+            season_id = season_dict.pop('season_id', None)
+            
             season = Season(**season_dict)
+            if season_id:
+                season.season_id = season_id
             session.merge(season)
         session.commit()
         print(f"✓ Imported {len(seasons_data)} seasons")
@@ -87,7 +114,15 @@ def import_data():
             if tournament_dict.get('date'):
                 tournament_dict['date'] = datetime.fromisoformat(tournament_dict['date']).date()
             
+            # Remove computed fields and auto-generated ID
+            tournament_dict.pop('participant_count', None)
+            tournament_dict.pop('is_full', None)
+            tournament_dict.pop('results', None)
+            tournament_id = tournament_dict.pop('tournament_id', None)
+            
             tournament = Tournament(**tournament_dict)
+            if tournament_id:
+                tournament.tournament_id = tournament_id
             session.merge(tournament)
         session.commit()
         print(f"✓ Imported {len(tournaments_data)} tournaments")
@@ -98,21 +133,41 @@ def import_data():
             results_data = json.load(f)
         
         for result_dict in results_data:
+            # Remove computed fields and auto-generated ID
+            result_dict.pop('fencer_name', None)
+            result_id = result_dict.pop('result_id', None)
+            
             result = TournamentResult(**result_dict)
+            if result_id:
+                result.result_id = result_id
             session.merge(result)
         session.commit()
         print(f"✓ Imported {len(results_data)} tournament results")
         
-        # Import Rankings
-        print("Importing rankings...")
+        # Skip Rankings import - they are automatically created when fencers are imported
+        # The Fencer.__init__() method calls assign_rankings_from_dob() which creates rankings
+        print("⚠️  Skipping rankings import (auto-generated from fencers)")
+        
+        # Update ranking points from imported rankings data
+        print("Updating ranking points from exported data...")
         with open(export_dir / "rankings.json", "r") as f:
             rankings_data = json.load(f)
         
+        updated_count = 0
         for ranking_dict in rankings_data:
-            ranking = Ranking(**ranking_dict)
-            session.merge(ranking)
+            # Find existing ranking and update it
+            existing = session.query(Ranking).filter_by(
+                fencer_id=ranking_dict['fencer_id'],
+                bracket_name=ranking_dict['bracket_name']
+            ).first()
+            
+            if existing:
+                existing.points = ranking_dict['points']
+                existing.tournaments_attended = ranking_dict['tournaments_attended']
+                updated_count += 1
+        
         session.commit()
-        print(f"✓ Imported {len(rankings_data)} rankings")
+        print(f"✓ Updated {updated_count} rankings with points and tournament data")
         
         # Import Users (passwords are already hashed)
         print("Importing users...")
@@ -154,4 +209,10 @@ if __name__ == "__main__":
         if input().lower() != 'y':
             sys.exit(0)
     
-    import_data()
+    # Ask if user wants to drop existing tables
+    print("\n⚠️  This will import data into your PostgreSQL database.")
+    print("Do you want to DROP all existing tables first? (y/n)")
+    print("(Choose 'y' for a fresh start, 'n' to append/update existing data)")
+    drop = input().lower().strip() == 'y'
+    
+    import_data(drop_existing=drop)

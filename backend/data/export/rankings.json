@@ -1,0 +1,7128 @@
+[
+  {
+    "ranking_id": 1,
+    "fencer_id": 1,
+    "bracket_name": "U11",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 2,
+    "fencer_id": 2,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 3,
+    "fencer_id": 3,
+    "bracket_name": "U11",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 4,
+    "fencer_id": 4,
+    "bracket_name": "U11",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 5,
+    "fencer_id": 5,
+    "bracket_name": "U11",
+    "points": 100,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 6,
+    "fencer_id": 6,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 7,
+    "fencer_id": 7,
+    "bracket_name": "U11",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 8,
+    "fencer_id": 8,
+    "bracket_name": "U11",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 9,
+    "fencer_id": 9,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 10,
+    "fencer_id": 10,
+    "bracket_name": "U13",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 11,
+    "fencer_id": 11,
+    "bracket_name": "U13",
+    "points": 80,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 12,
+    "fencer_id": 12,
+    "bracket_name": "U13",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 13,
+    "fencer_id": 13,
+    "bracket_name": "U13",
+    "points": 38,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 14,
+    "fencer_id": 14,
+    "bracket_name": "U13",
+    "points": 70,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 15,
+    "fencer_id": 15,
+    "bracket_name": "U13",
+    "points": 40,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 16,
+    "fencer_id": 16,
+    "bracket_name": "U13",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 17,
+    "fencer_id": 17,
+    "bracket_name": "U15",
+    "points": 95,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 18,
+    "fencer_id": 18,
+    "bracket_name": "U15",
+    "points": 162,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 19,
+    "fencer_id": 19,
+    "bracket_name": "U15",
+    "points": 55,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 20,
+    "fencer_id": 20,
+    "bracket_name": "U15",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 21,
+    "fencer_id": 21,
+    "bracket_name": "U15",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 22,
+    "fencer_id": 22,
+    "bracket_name": "U15",
+    "points": 60,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 23,
+    "fencer_id": 23,
+    "bracket_name": "Cadet",
+    "points": 70,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 24,
+    "fencer_id": 24,
+    "bracket_name": "Cadet",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 25,
+    "fencer_id": 25,
+    "bracket_name": "Cadet",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 26,
+    "fencer_id": 26,
+    "bracket_name": "Cadet",
+    "points": 55,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 27,
+    "fencer_id": 27,
+    "bracket_name": "Cadet",
+    "points": 100,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 28,
+    "fencer_id": 28,
+    "bracket_name": "Cadet",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 29,
+    "fencer_id": 29,
+    "bracket_name": "Junior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 30,
+    "fencer_id": 30,
+    "bracket_name": "Junior",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 31,
+    "fencer_id": 31,
+    "bracket_name": "Junior",
+    "points": 25,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 32,
+    "fencer_id": 32,
+    "bracket_name": "Junior",
+    "points": 240,
+    "tournaments_attended": 6
+  },
+  {
+    "ranking_id": 33,
+    "fencer_id": 33,
+    "bracket_name": "Junior",
+    "points": 90,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 34,
+    "fencer_id": 34,
+    "bracket_name": "Junior",
+    "points": 105,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 35,
+    "fencer_id": 35,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 36,
+    "fencer_id": 36,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 37,
+    "fencer_id": 37,
+    "bracket_name": "Senior",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 38,
+    "fencer_id": 38,
+    "bracket_name": "Senior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 39,
+    "fencer_id": 39,
+    "bracket_name": "Senior",
+    "points": 90,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 40,
+    "fencer_id": 40,
+    "bracket_name": "Senior",
+    "points": 115,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 41,
+    "fencer_id": 41,
+    "bracket_name": "U11",
+    "points": 130,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 42,
+    "fencer_id": 42,
+    "bracket_name": "U11",
+    "points": 10,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 43,
+    "fencer_id": 43,
+    "bracket_name": "U11",
+    "points": 115,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 44,
+    "fencer_id": 44,
+    "bracket_name": "U11",
+    "points": 25,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 45,
+    "fencer_id": 45,
+    "bracket_name": "U11",
+    "points": 122,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 46,
+    "fencer_id": 46,
+    "bracket_name": "U11",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 47,
+    "fencer_id": 47,
+    "bracket_name": "U11",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 48,
+    "fencer_id": 48,
+    "bracket_name": "U11",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 49,
+    "fencer_id": 49,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 50,
+    "fencer_id": 50,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 51,
+    "fencer_id": 51,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 52,
+    "fencer_id": 52,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 53,
+    "fencer_id": 53,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 54,
+    "fencer_id": 54,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 55,
+    "fencer_id": 55,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 56,
+    "fencer_id": 56,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 57,
+    "fencer_id": 57,
+    "bracket_name": "U15",
+    "points": 5,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 58,
+    "fencer_id": 58,
+    "bracket_name": "U15",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 59,
+    "fencer_id": 59,
+    "bracket_name": "U15",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 60,
+    "fencer_id": 60,
+    "bracket_name": "U15",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 61,
+    "fencer_id": 61,
+    "bracket_name": "U15",
+    "points": 40,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 62,
+    "fencer_id": 62,
+    "bracket_name": "U15",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 63,
+    "fencer_id": 63,
+    "bracket_name": "Cadet",
+    "points": 90,
+    "tournaments_attended": 5
+  },
+  {
+    "ranking_id": 64,
+    "fencer_id": 64,
+    "bracket_name": "Cadet",
+    "points": 60,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 65,
+    "fencer_id": 65,
+    "bracket_name": "Cadet",
+    "points": 100,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 66,
+    "fencer_id": 66,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 67,
+    "fencer_id": 67,
+    "bracket_name": "Cadet",
+    "points": 30,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 68,
+    "fencer_id": 68,
+    "bracket_name": "Cadet",
+    "points": 25,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 69,
+    "fencer_id": 69,
+    "bracket_name": "Junior",
+    "points": 195,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 70,
+    "fencer_id": 70,
+    "bracket_name": "Junior",
+    "points": 230,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 71,
+    "fencer_id": 71,
+    "bracket_name": "Junior",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 72,
+    "fencer_id": 72,
+    "bracket_name": "Junior",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 73,
+    "fencer_id": 73,
+    "bracket_name": "Junior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 74,
+    "fencer_id": 74,
+    "bracket_name": "Junior",
+    "points": 75,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 75,
+    "fencer_id": 75,
+    "bracket_name": "Senior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 76,
+    "fencer_id": 76,
+    "bracket_name": "Senior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 77,
+    "fencer_id": 77,
+    "bracket_name": "Senior",
+    "points": 30,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 78,
+    "fencer_id": 78,
+    "bracket_name": "Senior",
+    "points": 280,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 79,
+    "fencer_id": 79,
+    "bracket_name": "Senior",
+    "points": 55,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 80,
+    "fencer_id": 80,
+    "bracket_name": "Senior",
+    "points": 188,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 81,
+    "fencer_id": 81,
+    "bracket_name": "U11",
+    "points": 410,
+    "tournaments_attended": 7
+  },
+  {
+    "ranking_id": 82,
+    "fencer_id": 82,
+    "bracket_name": "U11",
+    "points": 93,
+    "tournaments_attended": 5
+  },
+  {
+    "ranking_id": 83,
+    "fencer_id": 83,
+    "bracket_name": "U11",
+    "points": 223,
+    "tournaments_attended": 6
+  },
+  {
+    "ranking_id": 84,
+    "fencer_id": 84,
+    "bracket_name": "U11",
+    "points": 325,
+    "tournaments_attended": 6
+  },
+  {
+    "ranking_id": 85,
+    "fencer_id": 85,
+    "bracket_name": "U11",
+    "points": 38,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 86,
+    "fencer_id": 86,
+    "bracket_name": "U11",
+    "points": 45,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 87,
+    "fencer_id": 87,
+    "bracket_name": "U11",
+    "points": 28,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 88,
+    "fencer_id": 88,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 89,
+    "fencer_id": 89,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 90,
+    "fencer_id": 90,
+    "bracket_name": "U13",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 91,
+    "fencer_id": 91,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 92,
+    "fencer_id": 92,
+    "bracket_name": "U13",
+    "points": 55,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 93,
+    "fencer_id": 93,
+    "bracket_name": "U13",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 94,
+    "fencer_id": 94,
+    "bracket_name": "U13",
+    "points": 90,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 95,
+    "fencer_id": 95,
+    "bracket_name": "U13",
+    "points": 110,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 96,
+    "fencer_id": 96,
+    "bracket_name": "U13",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 97,
+    "fencer_id": 97,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 98,
+    "fencer_id": 98,
+    "bracket_name": "U15",
+    "points": 90,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 99,
+    "fencer_id": 99,
+    "bracket_name": "U15",
+    "points": 200,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 100,
+    "fencer_id": 100,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 101,
+    "fencer_id": 101,
+    "bracket_name": "U15",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 102,
+    "fencer_id": 102,
+    "bracket_name": "U15",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 103,
+    "fencer_id": 103,
+    "bracket_name": "Cadet",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 104,
+    "fencer_id": 104,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 105,
+    "fencer_id": 105,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 106,
+    "fencer_id": 106,
+    "bracket_name": "Cadet",
+    "points": 95,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 107,
+    "fencer_id": 107,
+    "bracket_name": "Cadet",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 108,
+    "fencer_id": 108,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 109,
+    "fencer_id": 109,
+    "bracket_name": "Junior",
+    "points": 25,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 110,
+    "fencer_id": 110,
+    "bracket_name": "Junior",
+    "points": 45,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 111,
+    "fencer_id": 111,
+    "bracket_name": "Junior",
+    "points": 93,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 112,
+    "fencer_id": 112,
+    "bracket_name": "Junior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 113,
+    "fencer_id": 113,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 114,
+    "fencer_id": 114,
+    "bracket_name": "Junior",
+    "points": 38,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 115,
+    "fencer_id": 115,
+    "bracket_name": "Senior",
+    "points": 195,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 116,
+    "fencer_id": 116,
+    "bracket_name": "Senior",
+    "points": 142,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 117,
+    "fencer_id": 117,
+    "bracket_name": "Senior",
+    "points": 150,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 118,
+    "fencer_id": 118,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 119,
+    "fencer_id": 119,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 120,
+    "fencer_id": 120,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 121,
+    "fencer_id": 121,
+    "bracket_name": "U11",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 122,
+    "fencer_id": 122,
+    "bracket_name": "U11",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 123,
+    "fencer_id": 123,
+    "bracket_name": "U11",
+    "points": 98,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 124,
+    "fencer_id": 124,
+    "bracket_name": "U11",
+    "points": 45,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 125,
+    "fencer_id": 125,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 126,
+    "fencer_id": 126,
+    "bracket_name": "U11",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 127,
+    "fencer_id": 127,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 128,
+    "fencer_id": 128,
+    "bracket_name": "U11",
+    "points": 50,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 129,
+    "fencer_id": 129,
+    "bracket_name": "U13",
+    "points": 25,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 130,
+    "fencer_id": 130,
+    "bracket_name": "U13",
+    "points": 117,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 131,
+    "fencer_id": 131,
+    "bracket_name": "U13",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 132,
+    "fencer_id": 132,
+    "bracket_name": "U13",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 133,
+    "fencer_id": 133,
+    "bracket_name": "U13",
+    "points": 60,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 134,
+    "fencer_id": 134,
+    "bracket_name": "U13",
+    "points": 60,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 135,
+    "fencer_id": 135,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 136,
+    "fencer_id": 136,
+    "bracket_name": "U13",
+    "points": 110,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 137,
+    "fencer_id": 137,
+    "bracket_name": "U15",
+    "points": 25,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 138,
+    "fencer_id": 138,
+    "bracket_name": "U15",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 139,
+    "fencer_id": 139,
+    "bracket_name": "U15",
+    "points": 150,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 140,
+    "fencer_id": 140,
+    "bracket_name": "U15",
+    "points": 50,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 141,
+    "fencer_id": 141,
+    "bracket_name": "U15",
+    "points": 105,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 142,
+    "fencer_id": 142,
+    "bracket_name": "U15",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 143,
+    "fencer_id": 143,
+    "bracket_name": "Cadet",
+    "points": 70,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 144,
+    "fencer_id": 144,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 145,
+    "fencer_id": 145,
+    "bracket_name": "Cadet",
+    "points": 100,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 146,
+    "fencer_id": 146,
+    "bracket_name": "Cadet",
+    "points": 105,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 147,
+    "fencer_id": 147,
+    "bracket_name": "Cadet",
+    "points": 175,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 148,
+    "fencer_id": 148,
+    "bracket_name": "Cadet",
+    "points": 95,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 149,
+    "fencer_id": 149,
+    "bracket_name": "Junior",
+    "points": 30,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 150,
+    "fencer_id": 150,
+    "bracket_name": "Junior",
+    "points": 80,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 151,
+    "fencer_id": 151,
+    "bracket_name": "Junior",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 152,
+    "fencer_id": 152,
+    "bracket_name": "Junior",
+    "points": 105,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 153,
+    "fencer_id": 153,
+    "bracket_name": "Junior",
+    "points": 70,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 154,
+    "fencer_id": 154,
+    "bracket_name": "Junior",
+    "points": 127,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 155,
+    "fencer_id": 155,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 156,
+    "fencer_id": 156,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 157,
+    "fencer_id": 157,
+    "bracket_name": "Senior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 158,
+    "fencer_id": 158,
+    "bracket_name": "Senior",
+    "points": 307,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 159,
+    "fencer_id": 159,
+    "bracket_name": "Senior",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 160,
+    "fencer_id": 160,
+    "bracket_name": "Senior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 161,
+    "fencer_id": 161,
+    "bracket_name": "U11",
+    "points": 85,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 162,
+    "fencer_id": 162,
+    "bracket_name": "U11",
+    "points": 85,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 163,
+    "fencer_id": 163,
+    "bracket_name": "U11",
+    "points": 50,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 164,
+    "fencer_id": 164,
+    "bracket_name": "U11",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 165,
+    "fencer_id": 165,
+    "bracket_name": "U11",
+    "points": 43,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 166,
+    "fencer_id": 166,
+    "bracket_name": "U11",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 167,
+    "fencer_id": 167,
+    "bracket_name": "U11",
+    "points": 80,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 168,
+    "fencer_id": 168,
+    "bracket_name": "U11",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 169,
+    "fencer_id": 169,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 170,
+    "fencer_id": 170,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 171,
+    "fencer_id": 171,
+    "bracket_name": "U13",
+    "points": 125,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 172,
+    "fencer_id": 172,
+    "bracket_name": "U13",
+    "points": 50,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 173,
+    "fencer_id": 173,
+    "bracket_name": "U13",
+    "points": 5,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 174,
+    "fencer_id": 174,
+    "bracket_name": "U13",
+    "points": 5,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 175,
+    "fencer_id": 175,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 176,
+    "fencer_id": 176,
+    "bracket_name": "U13",
+    "points": 38,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 177,
+    "fencer_id": 177,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 178,
+    "fencer_id": 178,
+    "bracket_name": "U15",
+    "points": 198,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 179,
+    "fencer_id": 179,
+    "bracket_name": "U15",
+    "points": 45,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 180,
+    "fencer_id": 180,
+    "bracket_name": "U15",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 181,
+    "fencer_id": 181,
+    "bracket_name": "U15",
+    "points": 25,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 182,
+    "fencer_id": 182,
+    "bracket_name": "U15",
+    "points": 130,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 183,
+    "fencer_id": 183,
+    "bracket_name": "Cadet",
+    "points": 120,
+    "tournaments_attended": 5
+  },
+  {
+    "ranking_id": 184,
+    "fencer_id": 184,
+    "bracket_name": "Cadet",
+    "points": 95,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 185,
+    "fencer_id": 185,
+    "bracket_name": "Cadet",
+    "points": 165,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 186,
+    "fencer_id": 186,
+    "bracket_name": "Cadet",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 187,
+    "fencer_id": 187,
+    "bracket_name": "Cadet",
+    "points": 55,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 188,
+    "fencer_id": 188,
+    "bracket_name": "Cadet",
+    "points": 53,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 189,
+    "fencer_id": 189,
+    "bracket_name": "Junior",
+    "points": 58,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 190,
+    "fencer_id": 190,
+    "bracket_name": "Junior",
+    "points": 115,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 191,
+    "fencer_id": 191,
+    "bracket_name": "Junior",
+    "points": 100,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 192,
+    "fencer_id": 192,
+    "bracket_name": "Junior",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 193,
+    "fencer_id": 193,
+    "bracket_name": "Junior",
+    "points": 25,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 194,
+    "fencer_id": 194,
+    "bracket_name": "Junior",
+    "points": 250,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 195,
+    "fencer_id": 195,
+    "bracket_name": "Senior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 196,
+    "fencer_id": 196,
+    "bracket_name": "Senior",
+    "points": 25,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 197,
+    "fencer_id": 197,
+    "bracket_name": "Senior",
+    "points": 100,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 198,
+    "fencer_id": 198,
+    "bracket_name": "Senior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 199,
+    "fencer_id": 199,
+    "bracket_name": "Senior",
+    "points": 105,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 200,
+    "fencer_id": 200,
+    "bracket_name": "Senior",
+    "points": 170,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 201,
+    "fencer_id": 201,
+    "bracket_name": "U11",
+    "points": 105,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 202,
+    "fencer_id": 202,
+    "bracket_name": "U11",
+    "points": 190,
+    "tournaments_attended": 6
+  },
+  {
+    "ranking_id": 203,
+    "fencer_id": 203,
+    "bracket_name": "U11",
+    "points": 73,
+    "tournaments_attended": 5
+  },
+  {
+    "ranking_id": 204,
+    "fencer_id": 204,
+    "bracket_name": "U11",
+    "points": 95,
+    "tournaments_attended": 5
+  },
+  {
+    "ranking_id": 205,
+    "fencer_id": 205,
+    "bracket_name": "U11",
+    "points": 90,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 206,
+    "fencer_id": 206,
+    "bracket_name": "U11",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 207,
+    "fencer_id": 207,
+    "bracket_name": "U11",
+    "points": 123,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 208,
+    "fencer_id": 208,
+    "bracket_name": "U11",
+    "points": 170,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 209,
+    "fencer_id": 209,
+    "bracket_name": "U13",
+    "points": 65,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 210,
+    "fencer_id": 210,
+    "bracket_name": "U13",
+    "points": 68,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 211,
+    "fencer_id": 211,
+    "bracket_name": "U13",
+    "points": 83,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 212,
+    "fencer_id": 212,
+    "bracket_name": "U13",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 213,
+    "fencer_id": 213,
+    "bracket_name": "U13",
+    "points": 225,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 214,
+    "fencer_id": 214,
+    "bracket_name": "U13",
+    "points": 265,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 215,
+    "fencer_id": 215,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 216,
+    "fencer_id": 216,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 217,
+    "fencer_id": 217,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 218,
+    "fencer_id": 218,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 219,
+    "fencer_id": 219,
+    "bracket_name": "U15",
+    "points": 190,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 220,
+    "fencer_id": 220,
+    "bracket_name": "U15",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 221,
+    "fencer_id": 221,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 222,
+    "fencer_id": 222,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 223,
+    "fencer_id": 223,
+    "bracket_name": "Cadet",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 224,
+    "fencer_id": 224,
+    "bracket_name": "Cadet",
+    "points": 150,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 225,
+    "fencer_id": 225,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 226,
+    "fencer_id": 226,
+    "bracket_name": "Cadet",
+    "points": 38,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 227,
+    "fencer_id": 227,
+    "bracket_name": "Cadet",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 228,
+    "fencer_id": 228,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 229,
+    "fencer_id": 229,
+    "bracket_name": "Junior",
+    "points": 58,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 230,
+    "fencer_id": 230,
+    "bracket_name": "Junior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 231,
+    "fencer_id": 231,
+    "bracket_name": "Junior",
+    "points": 120,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 232,
+    "fencer_id": 232,
+    "bracket_name": "Junior",
+    "points": 150,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 233,
+    "fencer_id": 233,
+    "bracket_name": "Junior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 234,
+    "fencer_id": 234,
+    "bracket_name": "Junior",
+    "points": 100,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 235,
+    "fencer_id": 235,
+    "bracket_name": "Senior",
+    "points": 200,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 236,
+    "fencer_id": 236,
+    "bracket_name": "Senior",
+    "points": 95,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 237,
+    "fencer_id": 237,
+    "bracket_name": "Senior",
+    "points": 75,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 238,
+    "fencer_id": 238,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 239,
+    "fencer_id": 239,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 240,
+    "fencer_id": 240,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 241,
+    "fencer_id": 241,
+    "bracket_name": "U11",
+    "points": 25,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 242,
+    "fencer_id": 242,
+    "bracket_name": "U11",
+    "points": 145,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 243,
+    "fencer_id": 243,
+    "bracket_name": "U11",
+    "points": 120,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 244,
+    "fencer_id": 244,
+    "bracket_name": "U11",
+    "points": 100,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 245,
+    "fencer_id": 245,
+    "bracket_name": "U11",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 246,
+    "fencer_id": 246,
+    "bracket_name": "U11",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 247,
+    "fencer_id": 247,
+    "bracket_name": "U11",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 248,
+    "fencer_id": 248,
+    "bracket_name": "U11",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 249,
+    "fencer_id": 249,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 250,
+    "fencer_id": 250,
+    "bracket_name": "U13",
+    "points": 152,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 251,
+    "fencer_id": 251,
+    "bracket_name": "U13",
+    "points": 25,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 252,
+    "fencer_id": 252,
+    "bracket_name": "U13",
+    "points": 47,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 253,
+    "fencer_id": 253,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 254,
+    "fencer_id": 254,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 255,
+    "fencer_id": 255,
+    "bracket_name": "U13",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 256,
+    "fencer_id": 256,
+    "bracket_name": "U13",
+    "points": 30,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 257,
+    "fencer_id": 257,
+    "bracket_name": "U15",
+    "points": 60,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 258,
+    "fencer_id": 258,
+    "bracket_name": "U15",
+    "points": 207,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 259,
+    "fencer_id": 259,
+    "bracket_name": "U15",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 260,
+    "fencer_id": 260,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 261,
+    "fencer_id": 261,
+    "bracket_name": "U15",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 262,
+    "fencer_id": 262,
+    "bracket_name": "U15",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 263,
+    "fencer_id": 263,
+    "bracket_name": "Cadet",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 264,
+    "fencer_id": 264,
+    "bracket_name": "Cadet",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 265,
+    "fencer_id": 265,
+    "bracket_name": "Cadet",
+    "points": 70,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 266,
+    "fencer_id": 266,
+    "bracket_name": "Cadet",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 267,
+    "fencer_id": 267,
+    "bracket_name": "Cadet",
+    "points": 248,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 268,
+    "fencer_id": 268,
+    "bracket_name": "Cadet",
+    "points": 185,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 269,
+    "fencer_id": 269,
+    "bracket_name": "Junior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 270,
+    "fencer_id": 270,
+    "bracket_name": "Junior",
+    "points": 30,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 271,
+    "fencer_id": 271,
+    "bracket_name": "Junior",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 272,
+    "fencer_id": 272,
+    "bracket_name": "Junior",
+    "points": 63,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 273,
+    "fencer_id": 273,
+    "bracket_name": "Junior",
+    "points": 35,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 274,
+    "fencer_id": 274,
+    "bracket_name": "Junior",
+    "points": 50,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 275,
+    "fencer_id": 275,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 276,
+    "fencer_id": 276,
+    "bracket_name": "Senior",
+    "points": 100,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 277,
+    "fencer_id": 277,
+    "bracket_name": "Senior",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 278,
+    "fencer_id": 278,
+    "bracket_name": "Senior",
+    "points": 115,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 279,
+    "fencer_id": 279,
+    "bracket_name": "Senior",
+    "points": 195,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 280,
+    "fencer_id": 280,
+    "bracket_name": "Senior",
+    "points": 105,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 281,
+    "fencer_id": 281,
+    "bracket_name": "U11",
+    "points": 45,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 282,
+    "fencer_id": 282,
+    "bracket_name": "U11",
+    "points": 78,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 283,
+    "fencer_id": 283,
+    "bracket_name": "U11",
+    "points": 63,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 284,
+    "fencer_id": 284,
+    "bracket_name": "U11",
+    "points": 30,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 285,
+    "fencer_id": 285,
+    "bracket_name": "U11",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 286,
+    "fencer_id": 286,
+    "bracket_name": "U11",
+    "points": 30,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 287,
+    "fencer_id": 287,
+    "bracket_name": "U11",
+    "points": 75,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 288,
+    "fencer_id": 288,
+    "bracket_name": "U11",
+    "points": 5,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 289,
+    "fencer_id": 289,
+    "bracket_name": "U13",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 290,
+    "fencer_id": 290,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 291,
+    "fencer_id": 291,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 292,
+    "fencer_id": 292,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 293,
+    "fencer_id": 293,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 294,
+    "fencer_id": 294,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 295,
+    "fencer_id": 295,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 296,
+    "fencer_id": 296,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 297,
+    "fencer_id": 297,
+    "bracket_name": "U15",
+    "points": 45,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 298,
+    "fencer_id": 298,
+    "bracket_name": "U15",
+    "points": 38,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 299,
+    "fencer_id": 299,
+    "bracket_name": "U15",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 300,
+    "fencer_id": 300,
+    "bracket_name": "U15",
+    "points": 15,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 301,
+    "fencer_id": 301,
+    "bracket_name": "U15",
+    "points": 15,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 302,
+    "fencer_id": 302,
+    "bracket_name": "U15",
+    "points": 85,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 303,
+    "fencer_id": 303,
+    "bracket_name": "Cadet",
+    "points": 200,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 304,
+    "fencer_id": 304,
+    "bracket_name": "Cadet",
+    "points": 280,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 305,
+    "fencer_id": 305,
+    "bracket_name": "Cadet",
+    "points": 68,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 306,
+    "fencer_id": 306,
+    "bracket_name": "Cadet",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 307,
+    "fencer_id": 307,
+    "bracket_name": "Cadet",
+    "points": 8,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 308,
+    "fencer_id": 308,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 309,
+    "fencer_id": 309,
+    "bracket_name": "Junior",
+    "points": 140,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 310,
+    "fencer_id": 310,
+    "bracket_name": "Junior",
+    "points": 90,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 311,
+    "fencer_id": 311,
+    "bracket_name": "Junior",
+    "points": 175,
+    "tournaments_attended": 5
+  },
+  {
+    "ranking_id": 312,
+    "fencer_id": 312,
+    "bracket_name": "Junior",
+    "points": 188,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 313,
+    "fencer_id": 313,
+    "bracket_name": "Junior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 314,
+    "fencer_id": 314,
+    "bracket_name": "Junior",
+    "points": 25,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 315,
+    "fencer_id": 315,
+    "bracket_name": "Senior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 316,
+    "fencer_id": 316,
+    "bracket_name": "Senior",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 317,
+    "fencer_id": 317,
+    "bracket_name": "Senior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 318,
+    "fencer_id": 318,
+    "bracket_name": "Senior",
+    "points": 257,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 319,
+    "fencer_id": 319,
+    "bracket_name": "Senior",
+    "points": 100,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 320,
+    "fencer_id": 320,
+    "bracket_name": "Senior",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 321,
+    "fencer_id": 321,
+    "bracket_name": "U11",
+    "points": 212,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 322,
+    "fencer_id": 322,
+    "bracket_name": "U11",
+    "points": 315,
+    "tournaments_attended": 6
+  },
+  {
+    "ranking_id": 323,
+    "fencer_id": 323,
+    "bracket_name": "U11",
+    "points": 243,
+    "tournaments_attended": 6
+  },
+  {
+    "ranking_id": 324,
+    "fencer_id": 324,
+    "bracket_name": "U11",
+    "points": 45,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 325,
+    "fencer_id": 325,
+    "bracket_name": "U11",
+    "points": 8,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 326,
+    "fencer_id": 326,
+    "bracket_name": "U11",
+    "points": 8,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 327,
+    "fencer_id": 327,
+    "bracket_name": "U11",
+    "points": 95,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 328,
+    "fencer_id": 328,
+    "bracket_name": "U11",
+    "points": 33,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 329,
+    "fencer_id": 329,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 330,
+    "fencer_id": 330,
+    "bracket_name": "U13",
+    "points": 30,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 331,
+    "fencer_id": 331,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 332,
+    "fencer_id": 332,
+    "bracket_name": "U13",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 333,
+    "fencer_id": 333,
+    "bracket_name": "U13",
+    "points": 50,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 334,
+    "fencer_id": 334,
+    "bracket_name": "U13",
+    "points": 155,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 335,
+    "fencer_id": 335,
+    "bracket_name": "U13",
+    "points": 138,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 336,
+    "fencer_id": 336,
+    "bracket_name": "U13",
+    "points": 95,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 337,
+    "fencer_id": 337,
+    "bracket_name": "U15",
+    "points": 95,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 338,
+    "fencer_id": 338,
+    "bracket_name": "U15",
+    "points": 210,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 339,
+    "fencer_id": 339,
+    "bracket_name": "U15",
+    "points": 175,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 340,
+    "fencer_id": 340,
+    "bracket_name": "U15",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 341,
+    "fencer_id": 341,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 342,
+    "fencer_id": 342,
+    "bracket_name": "U15",
+    "points": 100,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 343,
+    "fencer_id": 343,
+    "bracket_name": "Cadet",
+    "points": 112,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 344,
+    "fencer_id": 344,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 345,
+    "fencer_id": 345,
+    "bracket_name": "Cadet",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 346,
+    "fencer_id": 346,
+    "bracket_name": "Cadet",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 347,
+    "fencer_id": 347,
+    "bracket_name": "Cadet",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 348,
+    "fencer_id": 348,
+    "bracket_name": "Cadet",
+    "points": 150,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 349,
+    "fencer_id": 349,
+    "bracket_name": "Junior",
+    "points": 40,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 350,
+    "fencer_id": 350,
+    "bracket_name": "Junior",
+    "points": 120,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 351,
+    "fencer_id": 351,
+    "bracket_name": "Junior",
+    "points": 30,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 352,
+    "fencer_id": 352,
+    "bracket_name": "Junior",
+    "points": 30,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 353,
+    "fencer_id": 353,
+    "bracket_name": "Junior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 354,
+    "fencer_id": 354,
+    "bracket_name": "Junior",
+    "points": 55,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 355,
+    "fencer_id": 355,
+    "bracket_name": "Senior",
+    "points": 115,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 356,
+    "fencer_id": 356,
+    "bracket_name": "Senior",
+    "points": 55,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 357,
+    "fencer_id": 357,
+    "bracket_name": "Senior",
+    "points": 230,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 358,
+    "fencer_id": 358,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 359,
+    "fencer_id": 359,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 360,
+    "fencer_id": 360,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 361,
+    "fencer_id": 361,
+    "bracket_name": "U11",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 362,
+    "fencer_id": 362,
+    "bracket_name": "U11",
+    "points": 100,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 363,
+    "fencer_id": 363,
+    "bracket_name": "U11",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 364,
+    "fencer_id": 364,
+    "bracket_name": "U11",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 365,
+    "fencer_id": 365,
+    "bracket_name": "U11",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 366,
+    "fencer_id": 366,
+    "bracket_name": "U11",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 367,
+    "fencer_id": 367,
+    "bracket_name": "U11",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 368,
+    "fencer_id": 368,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 369,
+    "fencer_id": 369,
+    "bracket_name": "U13",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 370,
+    "fencer_id": 370,
+    "bracket_name": "U13",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 371,
+    "fencer_id": 371,
+    "bracket_name": "U13",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 372,
+    "fencer_id": 372,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 373,
+    "fencer_id": 373,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 374,
+    "fencer_id": 374,
+    "bracket_name": "U13",
+    "points": 53,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 375,
+    "fencer_id": 375,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 376,
+    "fencer_id": 376,
+    "bracket_name": "U13",
+    "points": 38,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 377,
+    "fencer_id": 377,
+    "bracket_name": "U15",
+    "points": 50,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 378,
+    "fencer_id": 378,
+    "bracket_name": "U15",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 379,
+    "fencer_id": 379,
+    "bracket_name": "U15",
+    "points": 75,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 380,
+    "fencer_id": 380,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 381,
+    "fencer_id": 381,
+    "bracket_name": "U15",
+    "points": 165,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 382,
+    "fencer_id": 382,
+    "bracket_name": "U15",
+    "points": 260,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 383,
+    "fencer_id": 383,
+    "bracket_name": "Cadet",
+    "points": 50,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 384,
+    "fencer_id": 384,
+    "bracket_name": "Cadet",
+    "points": 120,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 385,
+    "fencer_id": 385,
+    "bracket_name": "Cadet",
+    "points": 95,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 386,
+    "fencer_id": 386,
+    "bracket_name": "Cadet",
+    "points": 155,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 387,
+    "fencer_id": 387,
+    "bracket_name": "Cadet",
+    "points": 243,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 388,
+    "fencer_id": 388,
+    "bracket_name": "Cadet",
+    "points": 275,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 389,
+    "fencer_id": 389,
+    "bracket_name": "Junior",
+    "points": 38,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 390,
+    "fencer_id": 390,
+    "bracket_name": "Junior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 391,
+    "fencer_id": 391,
+    "bracket_name": "Junior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 392,
+    "fencer_id": 392,
+    "bracket_name": "Junior",
+    "points": 217,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 393,
+    "fencer_id": 393,
+    "bracket_name": "Junior",
+    "points": 65,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 394,
+    "fencer_id": 394,
+    "bracket_name": "Junior",
+    "points": 198,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 395,
+    "fencer_id": 395,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 396,
+    "fencer_id": 396,
+    "bracket_name": "Senior",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 397,
+    "fencer_id": 397,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 398,
+    "fencer_id": 398,
+    "bracket_name": "Senior",
+    "points": 400,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 399,
+    "fencer_id": 399,
+    "bracket_name": "Senior",
+    "points": 45,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 400,
+    "fencer_id": 400,
+    "bracket_name": "Senior",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 401,
+    "fencer_id": 401,
+    "bracket_name": "U11",
+    "points": 65,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 402,
+    "fencer_id": 402,
+    "bracket_name": "U11",
+    "points": 218,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 403,
+    "fencer_id": 403,
+    "bracket_name": "U11",
+    "points": 70,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 404,
+    "fencer_id": 404,
+    "bracket_name": "U11",
+    "points": 265,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 405,
+    "fencer_id": 405,
+    "bracket_name": "U11",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 406,
+    "fencer_id": 406,
+    "bracket_name": "U11",
+    "points": 65,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 407,
+    "fencer_id": 407,
+    "bracket_name": "U11",
+    "points": 175,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 408,
+    "fencer_id": 408,
+    "bracket_name": "U11",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 409,
+    "fencer_id": 409,
+    "bracket_name": "U13",
+    "points": 60,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 410,
+    "fencer_id": 410,
+    "bracket_name": "U13",
+    "points": 30,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 411,
+    "fencer_id": 411,
+    "bracket_name": "U13",
+    "points": 30,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 412,
+    "fencer_id": 412,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 413,
+    "fencer_id": 413,
+    "bracket_name": "U13",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 414,
+    "fencer_id": 414,
+    "bracket_name": "U13",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 415,
+    "fencer_id": 415,
+    "bracket_name": "U13",
+    "points": 25,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 416,
+    "fencer_id": 416,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 417,
+    "fencer_id": 417,
+    "bracket_name": "U15",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 418,
+    "fencer_id": 418,
+    "bracket_name": "U15",
+    "points": 45,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 419,
+    "fencer_id": 419,
+    "bracket_name": "U15",
+    "points": 122,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 420,
+    "fencer_id": 420,
+    "bracket_name": "U15",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 421,
+    "fencer_id": 421,
+    "bracket_name": "U15",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 422,
+    "fencer_id": 422,
+    "bracket_name": "U15",
+    "points": 58,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 423,
+    "fencer_id": 423,
+    "bracket_name": "Cadet",
+    "points": 30,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 424,
+    "fencer_id": 424,
+    "bracket_name": "Cadet",
+    "points": 235,
+    "tournaments_attended": 5
+  },
+  {
+    "ranking_id": 425,
+    "fencer_id": 425,
+    "bracket_name": "Cadet",
+    "points": 185,
+    "tournaments_attended": 5
+  },
+  {
+    "ranking_id": 426,
+    "fencer_id": 426,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 427,
+    "fencer_id": 427,
+    "bracket_name": "Cadet",
+    "points": 25,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 428,
+    "fencer_id": 428,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 429,
+    "fencer_id": 429,
+    "bracket_name": "Junior",
+    "points": 105,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 430,
+    "fencer_id": 430,
+    "bracket_name": "Junior",
+    "points": 137,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 431,
+    "fencer_id": 431,
+    "bracket_name": "Junior",
+    "points": 80,
+    "tournaments_attended": 5
+  },
+  {
+    "ranking_id": 432,
+    "fencer_id": 432,
+    "bracket_name": "Junior",
+    "points": 100,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 433,
+    "fencer_id": 433,
+    "bracket_name": "Junior",
+    "points": 163,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 434,
+    "fencer_id": 434,
+    "bracket_name": "Junior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 435,
+    "fencer_id": 435,
+    "bracket_name": "Senior",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 436,
+    "fencer_id": 436,
+    "bracket_name": "Senior",
+    "points": 58,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 437,
+    "fencer_id": 437,
+    "bracket_name": "Senior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 438,
+    "fencer_id": 438,
+    "bracket_name": "Senior",
+    "points": 200,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 439,
+    "fencer_id": 439,
+    "bracket_name": "Senior",
+    "points": 65,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 440,
+    "fencer_id": 440,
+    "bracket_name": "Senior",
+    "points": 90,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 441,
+    "fencer_id": 441,
+    "bracket_name": "U11",
+    "points": 140,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 442,
+    "fencer_id": 442,
+    "bracket_name": "U11",
+    "points": 95,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 443,
+    "fencer_id": 443,
+    "bracket_name": "U11",
+    "points": 45,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 444,
+    "fencer_id": 444,
+    "bracket_name": "U11",
+    "points": 90,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 445,
+    "fencer_id": 445,
+    "bracket_name": "U11",
+    "points": 25,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 446,
+    "fencer_id": 446,
+    "bracket_name": "U11",
+    "points": 8,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 447,
+    "fencer_id": 447,
+    "bracket_name": "U11",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 448,
+    "fencer_id": 448,
+    "bracket_name": "U11",
+    "points": 38,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 449,
+    "fencer_id": 449,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 450,
+    "fencer_id": 450,
+    "bracket_name": "U13",
+    "points": 125,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 451,
+    "fencer_id": 451,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 452,
+    "fencer_id": 452,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 453,
+    "fencer_id": 453,
+    "bracket_name": "U13",
+    "points": 220,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 454,
+    "fencer_id": 454,
+    "bracket_name": "U13",
+    "points": 170,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 455,
+    "fencer_id": 455,
+    "bracket_name": "U13",
+    "points": 70,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 456,
+    "fencer_id": 456,
+    "bracket_name": "U13",
+    "points": 90,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 457,
+    "fencer_id": 457,
+    "bracket_name": "U15",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 458,
+    "fencer_id": 458,
+    "bracket_name": "U15",
+    "points": 45,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 459,
+    "fencer_id": 459,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 460,
+    "fencer_id": 460,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 461,
+    "fencer_id": 461,
+    "bracket_name": "U15",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 462,
+    "fencer_id": 462,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 463,
+    "fencer_id": 463,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 464,
+    "fencer_id": 464,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 465,
+    "fencer_id": 465,
+    "bracket_name": "Cadet",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 466,
+    "fencer_id": 466,
+    "bracket_name": "Cadet",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 467,
+    "fencer_id": 467,
+    "bracket_name": "Cadet",
+    "points": 112,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 468,
+    "fencer_id": 468,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 469,
+    "fencer_id": 469,
+    "bracket_name": "Junior",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 470,
+    "fencer_id": 470,
+    "bracket_name": "Junior",
+    "points": 25,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 471,
+    "fencer_id": 471,
+    "bracket_name": "Junior",
+    "points": 5,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 472,
+    "fencer_id": 472,
+    "bracket_name": "Junior",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 473,
+    "fencer_id": 473,
+    "bracket_name": "Junior",
+    "points": 70,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 474,
+    "fencer_id": 474,
+    "bracket_name": "Junior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 475,
+    "fencer_id": 475,
+    "bracket_name": "Senior",
+    "points": 125,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 476,
+    "fencer_id": 476,
+    "bracket_name": "Senior",
+    "points": 65,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 477,
+    "fencer_id": 477,
+    "bracket_name": "Senior",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 478,
+    "fencer_id": 478,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 479,
+    "fencer_id": 479,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 480,
+    "fencer_id": 480,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 481,
+    "fencer_id": 481,
+    "bracket_name": "U11",
+    "points": 40,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 482,
+    "fencer_id": 482,
+    "bracket_name": "U11",
+    "points": 30,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 483,
+    "fencer_id": 483,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 484,
+    "fencer_id": 484,
+    "bracket_name": "U11",
+    "points": 5,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 485,
+    "fencer_id": 485,
+    "bracket_name": "U11",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 486,
+    "fencer_id": 486,
+    "bracket_name": "U11",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 487,
+    "fencer_id": 487,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 488,
+    "fencer_id": 488,
+    "bracket_name": "U11",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 489,
+    "fencer_id": 489,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 490,
+    "fencer_id": 490,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 491,
+    "fencer_id": 491,
+    "bracket_name": "U13",
+    "points": 5,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 492,
+    "fencer_id": 492,
+    "bracket_name": "U13",
+    "points": 32,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 493,
+    "fencer_id": 493,
+    "bracket_name": "U13",
+    "points": 15,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 494,
+    "fencer_id": 494,
+    "bracket_name": "U13",
+    "points": 2,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 495,
+    "fencer_id": 495,
+    "bracket_name": "U13",
+    "points": 12,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 496,
+    "fencer_id": 496,
+    "bracket_name": "U13",
+    "points": 32,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 497,
+    "fencer_id": 497,
+    "bracket_name": "U15",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 498,
+    "fencer_id": 498,
+    "bracket_name": "U15",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 499,
+    "fencer_id": 499,
+    "bracket_name": "U15",
+    "points": 100,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 500,
+    "fencer_id": 500,
+    "bracket_name": "U15",
+    "points": 95,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 501,
+    "fencer_id": 501,
+    "bracket_name": "U15",
+    "points": 110,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 502,
+    "fencer_id": 502,
+    "bracket_name": "U15",
+    "points": 112,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 503,
+    "fencer_id": 503,
+    "bracket_name": "Cadet",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 504,
+    "fencer_id": 504,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 505,
+    "fencer_id": 505,
+    "bracket_name": "Cadet",
+    "points": 175,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 506,
+    "fencer_id": 506,
+    "bracket_name": "Cadet",
+    "points": 95,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 507,
+    "fencer_id": 507,
+    "bracket_name": "Cadet",
+    "points": 162,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 508,
+    "fencer_id": 508,
+    "bracket_name": "Cadet",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 509,
+    "fencer_id": 509,
+    "bracket_name": "Junior",
+    "points": 65,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 510,
+    "fencer_id": 510,
+    "bracket_name": "Junior",
+    "points": 5,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 511,
+    "fencer_id": 511,
+    "bracket_name": "Junior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 512,
+    "fencer_id": 512,
+    "bracket_name": "Junior",
+    "points": 180,
+    "tournaments_attended": 5
+  },
+  {
+    "ranking_id": 513,
+    "fencer_id": 513,
+    "bracket_name": "Junior",
+    "points": 70,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 514,
+    "fencer_id": 514,
+    "bracket_name": "Junior",
+    "points": 165,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 515,
+    "fencer_id": 515,
+    "bracket_name": "Senior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 516,
+    "fencer_id": 516,
+    "bracket_name": "Senior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 517,
+    "fencer_id": 517,
+    "bracket_name": "Senior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 518,
+    "fencer_id": 518,
+    "bracket_name": "Senior",
+    "points": 125,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 519,
+    "fencer_id": 519,
+    "bracket_name": "Senior",
+    "points": 108,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 520,
+    "fencer_id": 520,
+    "bracket_name": "Senior",
+    "points": 70,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 521,
+    "fencer_id": 521,
+    "bracket_name": "U11",
+    "points": 55,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 522,
+    "fencer_id": 522,
+    "bracket_name": "U11",
+    "points": 125,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 523,
+    "fencer_id": 523,
+    "bracket_name": "U11",
+    "points": 125,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 524,
+    "fencer_id": 524,
+    "bracket_name": "U11",
+    "points": 50,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 525,
+    "fencer_id": 525,
+    "bracket_name": "U11",
+    "points": 25,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 526,
+    "fencer_id": 526,
+    "bracket_name": "U11",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 527,
+    "fencer_id": 527,
+    "bracket_name": "U11",
+    "points": 50,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 528,
+    "fencer_id": 528,
+    "bracket_name": "U11",
+    "points": 50,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 529,
+    "fencer_id": 529,
+    "bracket_name": "U13",
+    "points": 30,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 530,
+    "fencer_id": 530,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 531,
+    "fencer_id": 531,
+    "bracket_name": "U13",
+    "points": 175,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 532,
+    "fencer_id": 532,
+    "bracket_name": "U13",
+    "points": 30,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 533,
+    "fencer_id": 533,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 534,
+    "fencer_id": 534,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 535,
+    "fencer_id": 535,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 536,
+    "fencer_id": 536,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 537,
+    "fencer_id": 537,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 538,
+    "fencer_id": 538,
+    "bracket_name": "U15",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 539,
+    "fencer_id": 539,
+    "bracket_name": "U15",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 540,
+    "fencer_id": 540,
+    "bracket_name": "U15",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 541,
+    "fencer_id": 541,
+    "bracket_name": "U15",
+    "points": 25,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 542,
+    "fencer_id": 542,
+    "bracket_name": "U15",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 543,
+    "fencer_id": 543,
+    "bracket_name": "Cadet",
+    "points": 133,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 544,
+    "fencer_id": 544,
+    "bracket_name": "Cadet",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 545,
+    "fencer_id": 545,
+    "bracket_name": "Cadet",
+    "points": 40,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 546,
+    "fencer_id": 546,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 547,
+    "fencer_id": 547,
+    "bracket_name": "Cadet",
+    "points": 122,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 548,
+    "fencer_id": 548,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 549,
+    "fencer_id": 549,
+    "bracket_name": "Junior",
+    "points": 100,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 550,
+    "fencer_id": 550,
+    "bracket_name": "Junior",
+    "points": 165,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 551,
+    "fencer_id": 551,
+    "bracket_name": "Junior",
+    "points": 70,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 552,
+    "fencer_id": 552,
+    "bracket_name": "Junior",
+    "points": 60,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 553,
+    "fencer_id": 553,
+    "bracket_name": "Junior",
+    "points": 60,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 554,
+    "fencer_id": 554,
+    "bracket_name": "Junior",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 555,
+    "fencer_id": 555,
+    "bracket_name": "Senior",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 556,
+    "fencer_id": 556,
+    "bracket_name": "Senior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 557,
+    "fencer_id": 557,
+    "bracket_name": "Senior",
+    "points": 100,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 558,
+    "fencer_id": 558,
+    "bracket_name": "Senior",
+    "points": 100,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 559,
+    "fencer_id": 559,
+    "bracket_name": "Senior",
+    "points": 140,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 560,
+    "fencer_id": 560,
+    "bracket_name": "Senior",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 561,
+    "fencer_id": 561,
+    "bracket_name": "U11",
+    "points": 123,
+    "tournaments_attended": 6
+  },
+  {
+    "ranking_id": 562,
+    "fencer_id": 562,
+    "bracket_name": "U11",
+    "points": 45,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 563,
+    "fencer_id": 563,
+    "bracket_name": "U11",
+    "points": 108,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 564,
+    "fencer_id": 564,
+    "bracket_name": "U11",
+    "points": 60,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 565,
+    "fencer_id": 565,
+    "bracket_name": "U11",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 566,
+    "fencer_id": 566,
+    "bracket_name": "U11",
+    "points": 23,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 567,
+    "fencer_id": 567,
+    "bracket_name": "U11",
+    "points": 60,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 568,
+    "fencer_id": 568,
+    "bracket_name": "U11",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 569,
+    "fencer_id": 569,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 570,
+    "fencer_id": 570,
+    "bracket_name": "U13",
+    "points": 65,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 571,
+    "fencer_id": 571,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 572,
+    "fencer_id": 572,
+    "bracket_name": "U13",
+    "points": 35,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 573,
+    "fencer_id": 573,
+    "bracket_name": "U13",
+    "points": 50,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 574,
+    "fencer_id": 574,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 575,
+    "fencer_id": 575,
+    "bracket_name": "U13",
+    "points": 250,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 576,
+    "fencer_id": 576,
+    "bracket_name": "U13",
+    "points": 80,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 577,
+    "fencer_id": 577,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 578,
+    "fencer_id": 578,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 579,
+    "fencer_id": 579,
+    "bracket_name": "U15",
+    "points": 150,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 580,
+    "fencer_id": 580,
+    "bracket_name": "U15",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 581,
+    "fencer_id": 581,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 582,
+    "fencer_id": 582,
+    "bracket_name": "U15",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 583,
+    "fencer_id": 583,
+    "bracket_name": "Cadet",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 584,
+    "fencer_id": 584,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 585,
+    "fencer_id": 585,
+    "bracket_name": "Cadet",
+    "points": 45,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 586,
+    "fencer_id": 586,
+    "bracket_name": "Cadet",
+    "points": 85,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 587,
+    "fencer_id": 587,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 588,
+    "fencer_id": 588,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 589,
+    "fencer_id": 589,
+    "bracket_name": "Junior",
+    "points": 115,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 590,
+    "fencer_id": 590,
+    "bracket_name": "Junior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 591,
+    "fencer_id": 591,
+    "bracket_name": "Junior",
+    "points": 98,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 592,
+    "fencer_id": 592,
+    "bracket_name": "Junior",
+    "points": 110,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 593,
+    "fencer_id": 593,
+    "bracket_name": "Junior",
+    "points": 75,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 594,
+    "fencer_id": 594,
+    "bracket_name": "Junior",
+    "points": 50,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 595,
+    "fencer_id": 595,
+    "bracket_name": "Senior",
+    "points": 125,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 596,
+    "fencer_id": 596,
+    "bracket_name": "Senior",
+    "points": 78,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 597,
+    "fencer_id": 597,
+    "bracket_name": "Senior",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 598,
+    "fencer_id": 598,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 599,
+    "fencer_id": 599,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 600,
+    "fencer_id": 600,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 601,
+    "fencer_id": 290,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 602,
+    "fencer_id": 291,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 603,
+    "fencer_id": 51,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 604,
+    "fencer_id": 170,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 605,
+    "fencer_id": 171,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 606,
+    "fencer_id": 529,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 607,
+    "fencer_id": 289,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 608,
+    "fencer_id": 409,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 609,
+    "fencer_id": 382,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 610,
+    "fencer_id": 22,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 611,
+    "fencer_id": 141,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 612,
+    "fencer_id": 21,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 613,
+    "fencer_id": 140,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 614,
+    "fencer_id": 262,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 615,
+    "fencer_id": 261,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 616,
+    "fencer_id": 219,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 617,
+    "fencer_id": 458,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 618,
+    "fencer_id": 410,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 619,
+    "fencer_id": 50,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 620,
+    "fencer_id": 530,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 621,
+    "fencer_id": 54,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 622,
+    "fencer_id": 175,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 623,
+    "fencer_id": 536,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 624,
+    "fencer_id": 53,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 625,
+    "fencer_id": 173,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 626,
+    "fencer_id": 414,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 627,
+    "fencer_id": 504,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 628,
+    "fencer_id": 505,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 629,
+    "fencer_id": 145,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 630,
+    "fencer_id": 25,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 631,
+    "fencer_id": 384,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 632,
+    "fencer_id": 270,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 633,
+    "fencer_id": 30,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 634,
+    "fencer_id": 390,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 635,
+    "fencer_id": 331,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 636,
+    "fencer_id": 332,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 637,
+    "fencer_id": 91,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 638,
+    "fencer_id": 569,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 639,
+    "fencer_id": 89,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 640,
+    "fencer_id": 451,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 641,
+    "fencer_id": 210,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 642,
+    "fencer_id": 209,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 643,
+    "fencer_id": 92,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 644,
+    "fencer_id": 232,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 645,
+    "fencer_id": 354,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 646,
+    "fencer_id": 334,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 647,
+    "fencer_id": 96,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 648,
+    "fencer_id": 575,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 649,
+    "fencer_id": 573,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 650,
+    "fencer_id": 456,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 651,
+    "fencer_id": 90,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 652,
+    "fencer_id": 449,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 653,
+    "fencer_id": 98,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 654,
+    "fencer_id": 99,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 655,
+    "fencer_id": 337,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 656,
+    "fencer_id": 339,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 657,
+    "fencer_id": 338,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 658,
+    "fencer_id": 578,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 659,
+    "fencer_id": 218,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 660,
+    "fencer_id": 579,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 661,
+    "fencer_id": 460,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 662,
+    "fencer_id": 342,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 663,
+    "fencer_id": 101,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 664,
+    "fencer_id": 340,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 665,
+    "fencer_id": 581,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 666,
+    "fencer_id": 514,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 667,
+    "fencer_id": 33,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 668,
+    "fencer_id": 274,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 669,
+    "fencer_id": 272,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 670,
+    "fencer_id": 394,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 671,
+    "fencer_id": 32,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 672,
+    "fencer_id": 153,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 673,
+    "fencer_id": 152,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 674,
+    "fencer_id": 508,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 675,
+    "fencer_id": 26,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 676,
+    "fencer_id": 580,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 677,
+    "fencer_id": 221,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 678,
+    "fencer_id": 461,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 679,
+    "fencer_id": 341,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 680,
+    "fencer_id": 102,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 681,
+    "fencer_id": 462,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 682,
+    "fencer_id": 220,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 683,
+    "fencer_id": 100,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 684,
+    "fencer_id": 430,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 685,
+    "fencer_id": 311,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 686,
+    "fencer_id": 551,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 687,
+    "fencer_id": 550,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 688,
+    "fencer_id": 310,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 689,
+    "fencer_id": 70,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 690,
+    "fencer_id": 429,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 691,
+    "fencer_id": 549,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 692,
+    "fencer_id": 69,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 693,
+    "fencer_id": 18,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 694,
+    "fencer_id": 379,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 695,
+    "fencer_id": 497,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 696,
+    "fencer_id": 498,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 697,
+    "fencer_id": 258,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 698,
+    "fencer_id": 257,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 699,
+    "fencer_id": 64,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 700,
+    "fencer_id": 185,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 701,
+    "fencer_id": 304,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 702,
+    "fencer_id": 183,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 703,
+    "fencer_id": 545,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 704,
+    "fencer_id": 184,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 705,
+    "fencer_id": 63,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 706,
+    "fencer_id": 65,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 707,
+    "fencer_id": 303,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 708,
+    "fencer_id": 188,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 709,
+    "fencer_id": 307,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 710,
+    "fencer_id": 547,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 711,
+    "fencer_id": 187,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 712,
+    "fencer_id": 149,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 713,
+    "fencer_id": 509,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 714,
+    "fencer_id": 391,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 715,
+    "fencer_id": 61,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 716,
+    "fencer_id": 422,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 717,
+    "fencer_id": 542,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 718,
+    "fencer_id": 301,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 719,
+    "fencer_id": 541,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 720,
+    "fencer_id": 540,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 721,
+    "fencer_id": 302,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 722,
+    "fencer_id": 343,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 723,
+    "fencer_id": 583,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 724,
+    "fencer_id": 223,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 725,
+    "fencer_id": 345,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 726,
+    "fencer_id": 225,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 727,
+    "fencer_id": 103,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 728,
+    "fencer_id": 464,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 729,
+    "fencer_id": 463,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 730,
+    "fencer_id": 111,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 731,
+    "fencer_id": 349,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 732,
+    "fencer_id": 471,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 733,
+    "fencer_id": 472,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 734,
+    "fencer_id": 473,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 735,
+    "fencer_id": 229,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 736,
+    "fencer_id": 231,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 737,
+    "fencer_id": 114,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 738,
+    "fencer_id": 431,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 739,
+    "fencer_id": 425,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 740,
+    "fencer_id": 305,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 741,
+    "fencer_id": 109,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 742,
+    "fencer_id": 470,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 743,
+    "fencer_id": 592,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 744,
+    "fencer_id": 110,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 745,
+    "fencer_id": 352,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 746,
+    "fencer_id": 582,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 747,
+    "fencer_id": 211,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 748,
+    "fencer_id": 572,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 749,
+    "fencer_id": 500,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 750,
+    "fencer_id": 501,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 751,
+    "fencer_id": 20,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 752,
+    "fencer_id": 142,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 753,
+    "fencer_id": 19,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 754,
+    "fencer_id": 259,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 755,
+    "fencer_id": 381,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 756,
+    "fencer_id": 13,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 757,
+    "fencer_id": 370,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 758,
+    "fencer_id": 255,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 759,
+    "fencer_id": 11,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 760,
+    "fencer_id": 252,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 761,
+    "fencer_id": 256,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 762,
+    "fencer_id": 12,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 763,
+    "fencer_id": 55,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 764,
+    "fencer_id": 16,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 765,
+    "fencer_id": 496,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 766,
+    "fencer_id": 133,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 767,
+    "fencer_id": 313,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 768,
+    "fencer_id": 60,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 769,
+    "fencer_id": 156,
+    "bracket_name": "Junior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 770,
+    "fencer_id": 222,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 771,
+    "fencer_id": 423,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 772,
+    "fencer_id": 56,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 773,
+    "fencer_id": 296,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 774,
+    "fencer_id": 413,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 775,
+    "fencer_id": 295,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 776,
+    "fencer_id": 533,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 777,
+    "fencer_id": 176,
+    "bracket_name": "U11",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 778,
+    "fencer_id": 387,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 779,
+    "fencer_id": 266,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 780,
+    "fencer_id": 146,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 781,
+    "fencer_id": 27,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 782,
+    "fencer_id": 268,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 783,
+    "fencer_id": 213,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 784,
+    "fencer_id": 94,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 785,
+    "fencer_id": 216,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 786,
+    "fencer_id": 455,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 787,
+    "fencer_id": 333,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 788,
+    "fencer_id": 454,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 789,
+    "fencer_id": 190,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 790,
+    "fencer_id": 192,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 791,
+    "fencer_id": 314,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 792,
+    "fencer_id": 554,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 793,
+    "fencer_id": 432,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 794,
+    "fencer_id": 73,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 795,
+    "fencer_id": 72,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 796,
+    "fencer_id": 424,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 797,
+    "fencer_id": 577,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 798,
+    "fencer_id": 459,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 799,
+    "fencer_id": 97,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 800,
+    "fencer_id": 457,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 801,
+    "fencer_id": 421,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 802,
+    "fencer_id": 182,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 803,
+    "fencer_id": 180,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 804,
+    "fencer_id": 181,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 805,
+    "fencer_id": 420,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 806,
+    "fencer_id": 62,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 807,
+    "fencer_id": 104,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 808,
+    "fencer_id": 465,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 809,
+    "fencer_id": 344,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 810,
+    "fencer_id": 74,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 811,
+    "fencer_id": 591,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 812,
+    "fencer_id": 107,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 813,
+    "fencer_id": 226,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 814,
+    "fencer_id": 105,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 815,
+    "fencer_id": 466,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 816,
+    "fencer_id": 106,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 817,
+    "fencer_id": 348,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 818,
+    "fencer_id": 224,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 819,
+    "fencer_id": 531,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 820,
+    "fencer_id": 532,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 821,
+    "fencer_id": 234,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 822,
+    "fencer_id": 392,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 823,
+    "fencer_id": 467,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 824,
+    "fencer_id": 412,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 825,
+    "fencer_id": 428,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 826,
+    "fencer_id": 67,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 827,
+    "fencer_id": 306,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 828,
+    "fencer_id": 186,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 829,
+    "fencer_id": 427,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 830,
+    "fencer_id": 148,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 831,
+    "fencer_id": 147,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 832,
+    "fencer_id": 388,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 833,
+    "fencer_id": 595,
+    "bracket_name": "Junior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 834,
+    "fencer_id": 585,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 835,
+    "fencer_id": 68,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 836,
+    "fencer_id": 308,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 837,
+    "fencer_id": 134,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 838,
+    "fencer_id": 15,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 839,
+    "fencer_id": 386,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 840,
+    "fencer_id": 506,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 841,
+    "fencer_id": 143,
+    "bracket_name": "U15",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 842,
+    "fencer_id": 383,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 843,
+    "fencer_id": 263,
+    "bracket_name": "U15",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 844,
+    "fencer_id": 144,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 845,
+    "fencer_id": 23,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 846,
+    "fencer_id": 265,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 847,
+    "fencer_id": 158,
+    "bracket_name": "Junior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 848,
+    "fencer_id": 58,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 849,
+    "fencer_id": 297,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 850,
+    "fencer_id": 177,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 851,
+    "fencer_id": 419,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 852,
+    "fencer_id": 57,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 853,
+    "fencer_id": 59,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 854,
+    "fencer_id": 172,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 855,
+    "fencer_id": 385,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 856,
+    "fencer_id": 264,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 857,
+    "fencer_id": 24,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 858,
+    "fencer_id": 178,
+    "bracket_name": "U13",
+    "points": 100,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 859,
+    "fencer_id": 298,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 860,
+    "fencer_id": 179,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 861,
+    "fencer_id": 546,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 862,
+    "fencer_id": 66,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 863,
+    "fencer_id": 346,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 864,
+    "fencer_id": 586,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 865,
+    "fencer_id": 292,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 866,
+    "fencer_id": 495,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 867,
+    "fencer_id": 376,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 868,
+    "fencer_id": 374,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 869,
+    "fencer_id": 253,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 870,
+    "fencer_id": 14,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 871,
+    "fencer_id": 493,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 872,
+    "fencer_id": 373,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 873,
+    "fencer_id": 227,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 874,
+    "fencer_id": 535,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 875,
+    "fencer_id": 174,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 876,
+    "fencer_id": 294,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 877,
+    "fencer_id": 507,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 878,
+    "fencer_id": 450,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 879,
+    "fencer_id": 330,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 880,
+    "fencer_id": 570,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 881,
+    "fencer_id": 136,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 882,
+    "fencer_id": 411,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 883,
+    "fencer_id": 300,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 884,
+    "fencer_id": 417,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 885,
+    "fencer_id": 418,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 886,
+    "fencer_id": 251,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 887,
+    "fencer_id": 490,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 888,
+    "fencer_id": 130,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 889,
+    "fencer_id": 492,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 890,
+    "fencer_id": 10,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 891,
+    "fencer_id": 543,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 892,
+    "fencer_id": 52,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 893,
+    "fencer_id": 169,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 894,
+    "fencer_id": 49,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 895,
+    "fencer_id": 267,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 896,
+    "fencer_id": 28,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 897,
+    "fencer_id": 230,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 898,
+    "fencer_id": 138,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 899,
+    "fencer_id": 589,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 900,
+    "fencer_id": 350,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 901,
+    "fencer_id": 347,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 902,
+    "fencer_id": 588,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 903,
+    "fencer_id": 468,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 904,
+    "fencer_id": 228,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 905,
+    "fencer_id": 329,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 906,
+    "fencer_id": 212,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 907,
+    "fencer_id": 415,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 908,
+    "fencer_id": 494,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 909,
+    "fencer_id": 375,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 910,
+    "fencer_id": 335,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 911,
+    "fencer_id": 574,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 912,
+    "fencer_id": 214,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 913,
+    "fencer_id": 571,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 914,
+    "fencer_id": 93,
+    "bracket_name": "U11",
+    "points": 8,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 915,
+    "fencer_id": 336,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 916,
+    "fencer_id": 544,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 917,
+    "fencer_id": 452,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 918,
+    "fencer_id": 293,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 919,
+    "fencer_id": 539,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 920,
+    "fencer_id": 380,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 921,
+    "fencer_id": 502,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 922,
+    "fencer_id": 378,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 923,
+    "fencer_id": 137,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 924,
+    "fencer_id": 377,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 925,
+    "fencer_id": 260,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 926,
+    "fencer_id": 499,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 927,
+    "fencer_id": 309,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 928,
+    "fencer_id": 150,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 929,
+    "fencer_id": 95,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 930,
+    "fencer_id": 590,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 931,
+    "fencer_id": 534,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 932,
+    "fencer_id": 538,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 933,
+    "fencer_id": 453,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 934,
+    "fencer_id": 139,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 935,
+    "fencer_id": 512,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 936,
+    "fencer_id": 108,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 937,
+    "fencer_id": 537,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 938,
+    "fencer_id": 299,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 939,
+    "fencer_id": 489,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 940,
+    "fencer_id": 371,
+    "bracket_name": "U11",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 941,
+    "fencer_id": 506,
+    "bracket_name": "Junior",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 942,
+    "fencer_id": 507,
+    "bracket_name": "Junior",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 943,
+    "fencer_id": 387,
+    "bracket_name": "Junior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 944,
+    "fencer_id": 28,
+    "bracket_name": "Junior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 945,
+    "fencer_id": 20,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 946,
+    "fencer_id": 380,
+    "bracket_name": "Cadet",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 947,
+    "fencer_id": 491,
+    "bracket_name": "U15",
+    "points": 150,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 948,
+    "fencer_id": 250,
+    "bracket_name": "U15",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 949,
+    "fencer_id": 129,
+    "bracket_name": "U15",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 950,
+    "fencer_id": 372,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 951,
+    "fencer_id": 249,
+    "bracket_name": "U15",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 952,
+    "fencer_id": 340,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 953,
+    "fencer_id": 577,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 954,
+    "fencer_id": 100,
+    "bracket_name": "Cadet",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 955,
+    "fencer_id": 339,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 956,
+    "fencer_id": 578,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 957,
+    "fencer_id": 222,
+    "bracket_name": "Cadet",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 958,
+    "fencer_id": 112,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 959,
+    "fencer_id": 260,
+    "bracket_name": "Cadet",
+    "points": 122,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 960,
+    "fencer_id": 52,
+    "bracket_name": "U15",
+    "points": 30,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 961,
+    "fencer_id": 108,
+    "bracket_name": "Junior",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 962,
+    "fencer_id": 113,
+    "bracket_name": "Junior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 963,
+    "fencer_id": 267,
+    "bracket_name": "Junior",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 964,
+    "fencer_id": 544,
+    "bracket_name": "Junior",
+    "points": 55,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 965,
+    "fencer_id": 543,
+    "bracket_name": "Junior",
+    "points": 20,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 966,
+    "fencer_id": 49,
+    "bracket_name": "U15",
+    "points": 80,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 967,
+    "fencer_id": 415,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 968,
+    "fencer_id": 534,
+    "bracket_name": "U15",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 969,
+    "fencer_id": 351,
+    "bracket_name": "Senior",
+    "points": 70,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 970,
+    "fencer_id": 462,
+    "bracket_name": "Cadet",
+    "points": 25,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 971,
+    "fencer_id": 416,
+    "bracket_name": "U15",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 972,
+    "fencer_id": 193,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 973,
+    "fencer_id": 434,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 974,
+    "fencer_id": 353,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 975,
+    "fencer_id": 201,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 976,
+    "fencer_id": 444,
+    "bracket_name": "U13",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 977,
+    "fencer_id": 588,
+    "bracket_name": "Junior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 978,
+    "fencer_id": 587,
+    "bracket_name": "Junior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 979,
+    "fencer_id": 468,
+    "bracket_name": "Junior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 980,
+    "fencer_id": 137,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 981,
+    "fencer_id": 377,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 982,
+    "fencer_id": 138,
+    "bracket_name": "Cadet",
+    "points": 100,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 983,
+    "fencer_id": 499,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 984,
+    "fencer_id": 378,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 985,
+    "fencer_id": 17,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 986,
+    "fencer_id": 426,
+    "bracket_name": "Junior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 987,
+    "fencer_id": 545,
+    "bracket_name": "Junior",
+    "points": 55,
+    "tournaments_attended": 4
+  },
+  {
+    "ranking_id": 988,
+    "fencer_id": 503,
+    "bracket_name": "Junior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 989,
+    "fencer_id": 218,
+    "bracket_name": "Cadet",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 990,
+    "fencer_id": 548,
+    "bracket_name": "Junior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 991,
+    "fencer_id": 303,
+    "bracket_name": "Junior",
+    "points": 5,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 992,
+    "fencer_id": 389,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 993,
+    "fencer_id": 511,
+    "bracket_name": "Senior",
+    "points": 0,
+    "tournaments_attended": 0
+  },
+  {
+    "ranking_id": 994,
+    "fencer_id": 2,
+    "bracket_name": "U13",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 995,
+    "fencer_id": 368,
+    "bracket_name": "U13",
+    "points": 75,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 996,
+    "fencer_id": 248,
+    "bracket_name": "U13",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 997,
+    "fencer_id": 485,
+    "bracket_name": "U13",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 998,
+    "fencer_id": 64,
+    "bracket_name": "Junior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 999,
+    "fencer_id": 374,
+    "bracket_name": "U15",
+    "points": 105,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 1000,
+    "fencer_id": 375,
+    "bracket_name": "U15",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 1001,
+    "fencer_id": 494,
+    "bracket_name": "U15",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 1002,
+    "fencer_id": 376,
+    "bracket_name": "U15",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 1003,
+    "fencer_id": 135,
+    "bracket_name": "U15",
+    "points": 40,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 1004,
+    "fencer_id": 254,
+    "bracket_name": "U15",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 1005,
+    "fencer_id": 228,
+    "bracket_name": "Junior",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 1006,
+    "fencer_id": 526,
+    "bracket_name": "U13",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 1007,
+    "fencer_id": 212,
+    "bracket_name": "U15",
+    "points": 120,
+    "tournaments_attended": 3
+  },
+  {
+    "ranking_id": 1008,
+    "fencer_id": 571,
+    "bracket_name": "U15",
+    "points": 45,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 1009,
+    "fencer_id": 209,
+    "bracket_name": "U15",
+    "points": 10,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 1010,
+    "fencer_id": 564,
+    "bracket_name": "U13",
+    "points": 138,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 1011,
+    "fencer_id": 104,
+    "bracket_name": "Junior",
+    "points": 35,
+    "tournaments_attended": 2
+  },
+  {
+    "ranking_id": 1012,
+    "fencer_id": 253,
+    "bracket_name": "U15",
+    "points": 15,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 1013,
+    "fencer_id": 459,
+    "bracket_name": "Cadet",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 1014,
+    "fencer_id": 61,
+    "bracket_name": "Cadet",
+    "points": 50,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 1015,
+    "fencer_id": 584,
+    "bracket_name": "Junior",
+    "points": 5,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 1016,
+    "fencer_id": 34,
+    "bracket_name": "Senior",
+    "points": 20,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 1017,
+    "fencer_id": 537,
+    "bracket_name": "Cadet",
+    "points": 30,
+    "tournaments_attended": 1
+  },
+  {
+    "ranking_id": 1018,
+    "fencer_id": 299,
+    "bracket_name": "Cadet",
+    "points": 15,
+    "tournaments_attended": 1
+  }
+]

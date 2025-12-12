@@ -16,20 +16,12 @@ class Config:
     SECRET_KEY = os.getenv('SECRET_KEY', 'dev-secret-key-change-in-production')
     DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
     
-    # Database settings
-    DATABASE_URL = os.getenv('DATABASE_URL')
-    
-    # If DATABASE_URL is not set, use SQLite for local development
-    if not DATABASE_URL:
-        import os.path as path
-        db_dir = path.join(path.dirname(__file__), 'data', 'database')
-        os.makedirs(db_dir, exist_ok=True)
-        db_path = path.join(db_dir, 'fencing_management.db')
-        DATABASE_URL = f"sqlite:///{db_path}"
-    
-    # Fix for Render/Heroku DATABASE_URL (postgres:// -> postgresql://)
-    if DATABASE_URL and DATABASE_URL.startswith('postgres://'):
-        DATABASE_URL = DATABASE_URL.replace('postgres://', 'postgresql://', 1)
+    # Database settings - Always use SQLite (simpler for deployment)
+    import os.path as path
+    db_dir = path.join(path.dirname(__file__), 'data', 'database')
+    os.makedirs(db_dir, exist_ok=True)
+    db_path = path.join(db_dir, 'fencing_management.db')
+    DATABASE_URL = f"sqlite:///{db_path}"
     
     # CORS settings
     CORS_ORIGINS = os.getenv('CORS_ORIGINS', '*').split(',')

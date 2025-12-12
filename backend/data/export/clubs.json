@@ -1,0 +1,122 @@
+[
+  {
+    "club_id": "1",
+    "club_name": "Chicago Athletic Club",
+    "start_year": 1997,
+    "status": "Active",
+    "weapon_club": "Sabre",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "2",
+    "club_name": "United Fencing Academy",
+    "start_year": 1981,
+    "status": "Active",
+    "weapon_club": "Foil",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "3",
+    "club_name": "Philadelphia Golden Fencing Academy",
+    "start_year": 1966,
+    "status": "Active",
+    "weapon_club": "Epee",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "4",
+    "club_name": "Washington Salle d'Armes",
+    "start_year": 1989,
+    "status": "Active",
+    "weapon_club": "Sabre",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "5",
+    "club_name": "Atlanta Royal Fencing Academy",
+    "start_year": 2017,
+    "status": "Active",
+    "weapon_club": "Foil",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "6",
+    "club_name": "Atlanta Fencing Center",
+    "start_year": 1952,
+    "status": "Active",
+    "weapon_club": "Epee",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "7",
+    "club_name": "Phoenix Salle d'Armes",
+    "start_year": 1998,
+    "status": "Active",
+    "weapon_club": "Sabre",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "8",
+    "club_name": "San Diego Fencing Academy",
+    "start_year": 2018,
+    "status": "Active",
+    "weapon_club": "Foil",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "9",
+    "club_name": "Miami Olympic Fencing Club",
+    "start_year": 2012,
+    "status": "Active",
+    "weapon_club": "Epee",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "10",
+    "club_name": "Houston Fencing Club",
+    "start_year": 1958,
+    "status": "Active",
+    "weapon_club": "Sabre",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "11",
+    "club_name": "Atlanta Dragon Fencing Club",
+    "start_year": 1961,
+    "status": "Active",
+    "weapon_club": "Foil",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "12",
+    "club_name": "Capital Fencing Institute",
+    "start_year": 2010,
+    "status": "Active",
+    "weapon_club": "Epee",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "13",
+    "club_name": "Seattle United Fencing Academy",
+    "start_year": 1951,
+    "status": "Active",
+    "weapon_club": "Sabre",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "14",
+    "club_name": "Philadelphia Salle d'Armes",
+    "start_year": 1967,
+    "status": "Active",
+    "weapon_club": "Foil",
+    "fencer_count": 40
+  },
+  {
+    "club_id": "15",
+    "club_name": "Austin Golden Fencing Academy",
+    "start_year": 1994,
+    "status": "Active",
+    "weapon_club": "Epee",
+    "fencer_count": 40
+  }
+]
