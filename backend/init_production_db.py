@@ -31,9 +31,21 @@ def initialize_if_needed():
     # Load realistic data
     print("📥 Loading data...")
     try:
-        from scripts.load_realistic_data import load_realistic_data
-        load_realistic_data()
-        print("✓ Database initialized successfully")
+        import sys
+        import subprocess
+        # Run the load_realistic_data script as a subprocess
+        result = subprocess.run(
+            [sys.executable, 'scripts/load_realistic_data.py'],
+            capture_output=True,
+            text=True,
+            cwd=Path(__file__).parent
+        )
+        if result.returncode == 0:
+            print("✓ Database initialized successfully with data")
+            print(result.stdout)
+        else:
+            print(f"⚠️  Error loading data: {result.stderr}")
+            print("Database initialized but empty")
     except Exception as e:
         print(f"⚠️  Error loading data: {e}")
         print("Database initialized but empty")
