@@ -6,6 +6,7 @@ Serves REST endpoints for tournaments, fencers, and rankings
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import logging
+import os
 from datetime import datetime, date
 
 from src.database import DATABASE_URL, init_db, get_session_context
@@ -21,7 +22,20 @@ logger = logging.getLogger(__name__)
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Enable CORS for frontend
+
+# Get configuration from environment
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'dev-secret-key-change-in-production')
+app.config['DEBUG'] = os.getenv('DEBUG', 'False').lower() == 'true'
+
+# CORS configuration - restrict in production
+cors_origins = os.getenv('CORS_ORIGINS', '*')
+if cors_origins == '*':
+    logger.warning("CORS is set to allow all origins. Set CORS_ORIGINS environment variable for production.")
+    CORS(app)
+else:
+    allowed_origins = [origin.strip() for origin in cors_origins.split(',')]
+    CORS(app, origins=allowed_origins)
+    logger.info(f"CORS enabled for origins: {allowed_origins}")
 
 # Database setup
 init_db()  # Initialize tables
@@ -1238,5 +1252,9 @@ def internal_error(error):
 
 
 if __name__ == '__main__':
-    logger.info("Starting AllFence API server...")
-    app.run(debug=True, host='0.0.0.0', port=5001)
+    # Get port and debug mode from environment
+    port = int(os.getenv('PORT', 5001))
+    debug = os.getenv('DEBUG', 'False').lower() == 'true'
+    
+    logger.info(f"Starting AllFence API server on port {port} (debug={debug})...")
+    app.run(debug=debug, host='0.0.0.0', port=port)

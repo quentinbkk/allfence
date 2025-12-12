@@ -3,11 +3,12 @@ Database Configuration and Session Management
 
 This module handles database connection, session creation, and initialization.
 It provides a centralized way to manage database connections throughout the application.
+Supports both SQLite (development) and PostgreSQL (production).
 """
 
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import sessionmaker, Session
-from sqlalchemy.pool import StaticPool
+from sqlalchemy.pool import StaticPool, NullPool
 from contextlib import contextmanager
 from .models import Base
 import os
@@ -17,32 +18,51 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Database file path - SQLite database stored as a file
-# Store database in data/database directory
-db_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'database')
-os.makedirs(db_dir, exist_ok=True)
-db_path = os.path.join(db_dir, 'fencing_management.db')
-DATABASE_URL = f"sqlite:///{db_path}"
+# Get database URL from environment variable or use SQLite for local development
+DATABASE_URL = os.getenv('DATABASE_URL')
 
-# For PostgreSQL, the URL would look like:
-# DATABASE_URL = "postgresql://username:password@localhost/fencing_db"
+if not DATABASE_URL:
+    # SQLite fallback for local development
+    db_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'database')
+    os.makedirs(db_dir, exist_ok=True)
+    db_path = os.path.join(db_dir, 'fencing_management.db')
+    DATABASE_URL = f"sqlite:///{db_path}"
+    logger.info(f"Using SQLite database at {db_path}")
+else:
+    # Fix for Render/Heroku postgres:// URLs
+    if DATABASE_URL.startswith('postgres://'):
+        DATABASE_URL = DATABASE_URL.replace('postgres://', 'postgresql://', 1)
+    logger.info("Using PostgreSQL database from environment")
+
+# Determine if we're using SQLite or PostgreSQL
+is_sqlite = 'sqlite' in DATABASE_URL
 
 # Create the database engine
-# echo=False to disable SQL query logging (set to True for debugging)
-# future=True enables SQLAlchemy 2.0 style (recommended for new code)
-# connect_args for SQLite to handle threading
-engine = create_engine(
-    DATABASE_URL,
-    echo=False,  # Set to True to see SQL queries in console
-    future=True,
-    connect_args={"check_same_thread": False} if "sqlite" in DATABASE_URL else {},
-)
+# Different settings for SQLite vs PostgreSQL
+if is_sqlite:
+    engine = create_engine(
+        DATABASE_URL,
+        echo=False,
+        future=True,
+        connect_args={"check_same_thread": False},
+        poolclass=StaticPool,
+    )
+else:
+    # PostgreSQL configuration
+    engine = create_engine(
+        DATABASE_URL,
+        echo=False,
+        future=True,
+        pool_pre_ping=True,  # Verify connections before using
+        pool_size=10,
+        max_overflow=20,
+    )
 
 # Enable SQLite foreign keys (important for referential integrity)
-@event.listens_for(engine, "connect")
-def set_sqlite_pragma(dbapi_conn, connection_record):
-    """Enable foreign key constraints for SQLite"""
-    if "sqlite" in DATABASE_URL:
+if is_sqlite:
+    @event.listens_for(engine, "connect")
+    def set_sqlite_pragma(dbapi_conn, connection_record):
+        """Enable foreign key constraints for SQLite"""
         cursor = dbapi_conn.cursor()
         cursor.execute("PRAGMA foreign_keys=ON")
         cursor.close()

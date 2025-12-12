@@ -56,7 +56,12 @@ allfence-frontend/dist-ssr/
 allfence-frontend/.vite/
 allfence-frontend/.cache/
 
-# Frontend environment files
+# Environment files (never commit these!)
+.env
+.env.local
+.env.*.local
+backend/.env
+backend/.env.local
 allfence-frontend/.env
 allfence-frontend/.env.local
 allfence-frontend/.env.*.local
