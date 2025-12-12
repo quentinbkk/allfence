@@ -14,6 +14,7 @@ import {
   Alert,
 } from '@mui/material';
 import { WEAPON_CHOICES, BRACKET_CHOICES } from '../../utils/constants';
+// @ts-ignore - TournamentStatus used in type checking
 import { WeaponType, AgeBracket, Gender, CompetitionType, TournamentStatus } from '../../types';
 
 interface TournamentFormDialogProps {

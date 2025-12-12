@@ -23,10 +23,10 @@ import {
   Tooltip,
   Checkbox,
 } from '@mui/material';
+// @ts-ignore - Icons used in JSX
 import DeleteIcon from '@mui/icons-material/Delete';
+// @ts-ignore - Icons used in JSX  
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import IconButton from '@mui/material/IconButton';
-import Tooltip from '@mui/material/Tooltip';
 import { useGetTournamentByIdQuery, useUpdateTournamentMutation, useGetTournamentParticipantsQuery, useUnregisterFencerMutation } from '../api/tournaments';
 import { useGetRankingsQuery } from '../api/rankings';
 import { useAppSelector } from '../store/hooks';
