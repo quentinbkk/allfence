@@ -47,14 +47,7 @@ git push origin main
   - **Start Command**: `cd backend && gunicorn app:app`
   - **Instance Type**: `Free`
 
-### 3. Add Persistent Disk (IMPORTANT for SQLite)
-- Scroll to "Disks" section
-- Click "Add Disk"
-  - **Name**: `allfence-data`
-  - **Mount Path**: `/opt/render/project/src/backend/data`
-  - **Size**: `1 GB`
-
-### 4. Set Environment Variables
+### 3. Set Environment Variables
 Click "Environment" and add:
 
 | Key | Value |
@@ -65,26 +58,13 @@ Click "Environment" and add:
 | `FLASK_ENV` | `production` |
 | `CORS_ORIGINS` | `https://allfence.vercel.app` _(update after Vercel deployment)_ |
 
-### 5. Deploy
+### 4. Deploy
 - Click "Create Web Service"
 - Wait 5-10 minutes for deployment
+- The build command will automatically create and populate the database
 - Copy your backend URL: `https://allfence-api.onrender.com`
 
-### 6. Upload Database (One-time setup)
-After first deployment:
-- Go to your service dashboard
-- Click "Shell" tab
-- Upload your database file: `backend/data/database/fencing_management.db`
-  - Or SSH in and copy it manually
-  - The disk persists across deployments
-
-**Alternative**: Let the app create a fresh database:
-```bash
-# In Render shell
-cd backend
-python -c "from src.database import init_db; init_db(); print('Database initialized')"
-python scripts/load_realistic_data.py  # Load your data
-```
+**Note**: On free tier, the database recreates on each deploy. For data persistence, upgrade to a paid plan with disk support ($7/month Starter plan).
 
 ---
 
@@ -158,8 +138,9 @@ Should return: `{"status": "healthy"}`
 - Check disk is mounted: `ls -la /opt/render/project/src/backend/data`
 
 **"No database file"**
-- Upload your SQLite database to the persistent disk
-- Or initialize fresh: Run `init_db()` in Render shell
+- Database is created during build
+- Check build logs for errors
+- On free tier, database resets on each deploy
 
 **"CORS errors"**
 - Verify `CORS_ORIGINS` matches your Vercel URL exactly
@@ -198,9 +179,9 @@ git push origin main
 Vercel auto-deploys on push!
 
 ### Database Updates
-- SQLite file persists on the disk
-- Manual updates: Use Render Shell to run scripts
-- Schema changes: Create migration scripts
+- **Free tier**: Database recreates on each deploy (no persistence)
+- **Paid tier** ($7/month Starter): Add persistent disk for data retention
+- To keep data: Upgrade to Starter plan and add disk in Render dashboard
 
 ---
 
@@ -210,7 +191,8 @@ Vercel auto-deploys on push!
 - 750 hours/month (always-on)
 - Spins down after 15 min inactivity
 - First request after spin-down takes ~30 seconds
-- 1 GB disk storage
+- **No persistent disk** - database resets on each deploy
+- Upgrade to Starter ($7/month) for persistent disk
 
 **Vercel Free Tier:**
 - Unlimited deployments

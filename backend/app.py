@@ -20,6 +20,13 @@ from src.season_simulation import simulate_full_season
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# Initialize database on startup (if needed)
+try:
+    from init_production_db import initialize_if_needed
+    initialize_if_needed()
+except Exception as e:
+    logger.warning(f"Could not run database initialization: {e}")
+
 # Initialize Flask app
 app = Flask(__name__)
 

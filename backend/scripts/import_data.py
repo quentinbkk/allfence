@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+python ./backend/scripts/import_data.py#!/usr/bin/env python3
 """
 Script to import data from JSON files to PostgreSQL database.
 Run this after exporting from SQLite.
