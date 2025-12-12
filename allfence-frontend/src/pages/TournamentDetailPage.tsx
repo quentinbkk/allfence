@@ -19,13 +19,8 @@ import {
   InputLabel,
   Select,
   MenuItem,
-  IconButton,
-  Tooltip,
   Checkbox,
 } from '@mui/material';
-// @ts-ignore - Icons used in JSX
-import DeleteIcon from '@mui/icons-material/Delete';
-// @ts-ignore - Icons used in JSX  
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import { useGetTournamentByIdQuery, useUpdateTournamentMutation, useGetTournamentParticipantsQuery, useUnregisterFencerMutation } from '../api/tournaments';
 import { useGetRankingsQuery } from '../api/rankings';
@@ -634,7 +629,7 @@ export const TournamentDetailPage: React.FC = () => {
 };
 
 // Helper function for placement suffix
-function getPlacementSuffix(placement: number): string {
+export function getPlacementSuffix(placement: number): string {
   const j = placement % 10;
   const k = placement % 100;
   if (j === 1 && k !== 11) return 'st';

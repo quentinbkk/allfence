@@ -14,8 +14,7 @@ import {
   Alert,
 } from '@mui/material';
 import { WEAPON_CHOICES } from '../../utils/constants';
-// @ts-ignore - WeaponType used in type checking
-import { WeaponType, Gender, Fencer } from '../../types';
+import { Gender, Fencer } from '../../types';
 
 interface FencerEditDialogProps {
   open: boolean;
