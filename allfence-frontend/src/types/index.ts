@@ -47,6 +47,9 @@ export interface Ranking {
   fencer_id: number;
   bracket_name: AgeBracket;
   points: number;
+  tournaments_attended?: number;
+  rank?: number;
+  total_points?: number;
   fencer?: Fencer;
 }
 

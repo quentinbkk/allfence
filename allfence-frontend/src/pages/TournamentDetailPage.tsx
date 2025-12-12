@@ -25,6 +25,8 @@ import {
 } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
 import { useGetTournamentByIdQuery, useUpdateTournamentMutation, useGetTournamentParticipantsQuery, useUnregisterFencerMutation } from '../api/tournaments';
 import { useGetRankingsQuery } from '../api/rankings';
 import { useAppSelector } from '../store/hooks';
@@ -193,7 +195,7 @@ export const TournamentDetailPage: React.FC = () => {
                 {tournament.tournament_name}
               </Typography>
               <Typography variant="body2" color="textSecondary">
-                Created: {formatDate(tournament.created_at)}
+                Created: {tournament.created_at ? formatDate(tournament.created_at) : 'N/A'}
               </Typography>
             </div>
             <StatusBadge status={tournament.status} />
