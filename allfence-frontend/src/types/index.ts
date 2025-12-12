@@ -92,10 +92,12 @@ export interface Tournament {
   gender?: Gender;
   location?: string;
   max_participants?: number;
+  participant_count?: number;
+  is_full?: boolean;
   description?: string;
   status: TournamentStatus;
-  participant_count: number;
-  created_at: string;
+  season_id?: number;
+  created_at?: string;
 }
 
 // =====================================================
