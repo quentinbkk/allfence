@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "allfence-frontend",
+			"path": "../../../../allfence-frontend"
+		},
+		{
+			"name": "info_202_allfence",
+			"path": "../../.."
+		}
+	],
+	"settings": {}
+}
