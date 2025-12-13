@@ -12,6 +12,7 @@ import {
   Grid,
   Paper,
   IconButton,
+  Button,
 } from '@mui/material';
 import { ArrowBack } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
@@ -19,7 +20,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 import { useGetTopFencersCumulativePointsQuery } from '../api/rankings';
 import { LoadingSpinner, ErrorMessage } from '../components/common';
 import { BRACKET_CHOICES, WEAPON_CHOICES } from '../utils/constants';
-import { AgeBracket, WeaponType } from '../types';
+import { AgeBracket, WeaponType, Gender } from '../types';
 
 // Color palette for the lines
 const COLORS = [
@@ -31,13 +32,27 @@ export const RankingsProgressPage: React.FC = () => {
   const navigate = useNavigate();
   const [selectedBracket, setSelectedBracket] = useState<AgeBracket>(AgeBracket.SENIOR);
   const [selectedWeapon, setSelectedWeapon] = useState<WeaponType | ''>('');
+  const [selectedGender, setSelectedGender] = useState<Gender | ''>('');
+  
+  // Applied filters (used for the actual API call)
+  const [appliedBracket, setAppliedBracket] = useState<AgeBracket>(AgeBracket.SENIOR);
+  const [appliedWeapon, setAppliedWeapon] = useState<WeaponType | ''>('');
+  const [appliedGender, setAppliedGender] = useState<Gender | ''>('');
 
-  // Fetch cumulative points data for top 10 fencers
+  // Fetch cumulative points data for top 10 fencers with applied filters
   const { data: fencersData = [], isLoading, error, refetch } = useGetTopFencersCumulativePointsQuery({
-    bracket: selectedBracket,
-    weapon: selectedWeapon || undefined,
+    bracket: appliedBracket,
+    weapon: appliedWeapon || undefined,
+    gender: appliedGender || undefined,
     limit: 10,
   });
+  
+  // Handle apply filters
+  const handleApplyFilters = () => {
+    setAppliedBracket(selectedBracket);
+    setAppliedWeapon(selectedWeapon);
+    setAppliedGender(selectedGender);
+  };
 
   // Transform data for recharts format
   // We need to create a unified date array and map each fencer's cumulative points
@@ -137,6 +152,31 @@ export const RankingsProgressPage: React.FC = () => {
                 </Select>
               </FormControl>
             </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <FormControl fullWidth>
+                <InputLabel>Gender</InputLabel>
+                <Select
+                  value={selectedGender}
+                  onChange={(e) => setSelectedGender(e.target.value as Gender | '')}
+                  label="Gender"
+                >
+                  <MenuItem value="">All Genders</MenuItem>
+                  <MenuItem value={Gender.MALE}>Male</MenuItem>
+                  <MenuItem value={Gender.FEMALE}>Female</MenuItem>
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3} sx={{ display: 'flex', alignItems: 'center' }}>
+              <Button
+                variant="contained"
+                color="primary"
+                fullWidth
+                onClick={handleApplyFilters}
+                sx={{ height: '56px' }}
+              >
+                Apply Filters
+              </Button>
+            </Grid>
           </Grid>
         </CardContent>
       </Card>
@@ -203,7 +243,18 @@ export const RankingsProgressPage: React.FC = () => {
               <Grid container spacing={2}>
                 {fencersData.map((fencer, index) => (
                   <Grid item xs={12} sm={6} md={4} key={fencer.fencer_id}>
-                    <Card sx={{ borderLeft: `4px solid ${COLORS[index % COLORS.length]}` }}>
+                    <Card 
+                      sx={{ 
+                        borderLeft: `4px solid ${COLORS[index % COLORS.length]}`,
+                        cursor: 'pointer',
+                        transition: 'transform 0.2s, box-shadow 0.2s',
+                        '&:hover': {
+                          transform: 'translateY(-4px)',
+                          boxShadow: 3,
+                        }
+                      }}
+                      onClick={() => navigate(`/fencers/${fencer.fencer_id}`)}
+                    >
                       <CardContent>
                         <Typography variant="subtitle2" color="text.secondary">
                           #{index + 1}

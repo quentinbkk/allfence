@@ -3,6 +3,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
 import AppLayout from './components/layout/AppLayout';
+import ProtectedRoute from './components/ProtectedRoute';
 import TournamentsPage from './pages/TournamentsPage';
 import TournamentDetailPage from './pages/TournamentDetailPage';
 import FencersPage from './pages/FencersPage';
@@ -33,21 +34,23 @@ function App() {
         <Router>
           <Routes>
             <Route path="/login" element={<LoginPage />} />
-            <Route element={<AppLayout />}>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/home" element={<HomePage />} />
-              <Route path="/tournaments" element={<TournamentsPage />} />
-              <Route path="/tournaments/:id" element={<TournamentDetailPage />} />
-              <Route path="/fencers" element={<FencersPage />} />
-              <Route path="/fencers/:id" element={<FencerDetailPage />} />
-              <Route path="/rankings" element={<RankingsPage />} />
-              <Route path="/rankings/progress" element={<RankingsProgressPage />} />
-              <Route path="/rankings/clubs" element={<ClubRankingsPage />} />
-              <Route path="/clubs" element={<ClubsPage />} />
-              <Route path="/clubs/:id" element={<ClubDetailPage />} />
-              <Route path="/data-structure" element={<DataStructurePage />} />
-              <Route path="/dev/season-simulation" element={<SeasonSimulationPage />} />
-              <Route path="*" element={<NotFoundPage />} />
+            <Route element={<ProtectedRoute />}>
+              <Route element={<AppLayout />}>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/home" element={<HomePage />} />
+                <Route path="/tournaments" element={<TournamentsPage />} />
+                <Route path="/tournaments/:id" element={<TournamentDetailPage />} />
+                <Route path="/fencers" element={<FencersPage />} />
+                <Route path="/fencers/:id" element={<FencerDetailPage />} />
+                <Route path="/rankings" element={<RankingsPage />} />
+                <Route path="/rankings/progress" element={<RankingsProgressPage />} />
+                <Route path="/rankings/clubs" element={<ClubRankingsPage />} />
+                <Route path="/clubs" element={<ClubsPage />} />
+                <Route path="/clubs/:id" element={<ClubDetailPage />} />
+                <Route path="/data-structure" element={<DataStructurePage />} />
+                <Route path="/dev/season-simulation" element={<SeasonSimulationPage />} />
+                <Route path="*" element={<NotFoundPage />} />
+              </Route>
             </Route>
           </Routes>
         </Router>

@@ -778,6 +778,7 @@ def get_top_fencers_cumulative_points():
         with get_session_context() as db:
             bracket = request.args.get('bracket')
             weapon = request.args.get('weapon')
+            gender = request.args.get('gender')
             limit = int(request.args.get('limit', 10))
             
             if not bracket:
@@ -794,6 +795,9 @@ def get_top_fencers_cumulative_points():
             
             if weapon:
                 top_fencers_query = top_fencers_query.filter(Fencer.weapon == weapon)
+            
+            if gender:
+                top_fencers_query = top_fencers_query.filter(Fencer.gender == gender)
             
             top_fencers = top_fencers_query.order_by(
                 Ranking.points.desc()

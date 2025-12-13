@@ -41,13 +41,29 @@ def initialize_if_needed():
             cwd=Path(__file__).parent
         )
         if result.returncode == 0:
-            print("✓ Database initialized successfully with data")
+            print("✓ Data loaded successfully")
             print(result.stdout)
         else:
             print(f"⚠️  Error loading data: {result.stderr}")
             print("Database initialized but empty")
     except Exception as e:
         print(f"⚠️  Error loading data: {e}")
+    
+    # Create admin user
+    print("👤 Creating admin user...")
+    try:
+        result = subprocess.run(
+            [sys.executable, 'scripts/create_admin.py'],
+            capture_output=True,
+            text=True,
+            cwd=Path(__file__).parent
+        )
+        if result.returncode == 0:
+            print(result.stdout)
+        else:
+            print(f"⚠️  Error creating admin user: {result.stderr}")
+    except Exception as e:
+        print(f"⚠️  Error creating admin user: {e}")
         print("Database initialized but empty")
 
 if __name__ == "__main__":

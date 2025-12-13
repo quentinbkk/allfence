@@ -5,15 +5,24 @@ import {
   People as FencersIcon,
   LeaderboardOutlined as RankingsIcon,
   Groups as ClubsIcon,
-  Science as DevIcon,
   EmojiEventsOutlined as ClubRankingsIcon,
   AccountTree as DataStructureIcon,
   Home as HomeIcon,
+  Logout as LogoutIcon,
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from '../../store/hooks';
+import { logout } from '../../store/slices/authSlice';
 
 export const Sidebar: React.FC = () => {
   const navigate = useNavigate();
+  const dispatch = useAppDispatch();
+  const { user } = useAppSelector((state) => state.auth);
+
+  const handleLogout = () => {
+    dispatch(logout());
+    navigate('/login');
+  };
 
   const menuItems = [
     { label: 'Home', icon: <HomeIcon />, path: '/' },
@@ -25,18 +34,14 @@ export const Sidebar: React.FC = () => {
     { label: 'Data Structure', icon: <DataStructureIcon />, path: '/data-structure' },
   ];
 
-  const devMenuItems = [
-    { label: 'Season Simulation', icon: <DevIcon />, path: '/dev/season-simulation' },
-  ];
-
   return (
-    <Box sx={{ width: 280, bgcolor: '#2c3e50', color: 'white', overflowY: 'auto' }}>
+    <Box sx={{ width: 280, bgcolor: '#2c3e50', color: 'white', height: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Box sx={{ p: 2, borderBottom: '1px solid #34495e' }}>
         <Typography variant="h6" sx={{ fontWeight: 'bold', m: 0 }}>
           AllFence
         </Typography>
       </Box>
-      <List>
+      <List sx={{ flex: 1, overflowY: 'auto' }}>
         {menuItems.map((item) => (
           <ListItem key={item.path} disablePadding>
             <ListItemButton
@@ -54,30 +59,32 @@ export const Sidebar: React.FC = () => {
           </ListItem>
         ))}
       </List>
-      <Divider sx={{ bgcolor: '#34495e', my: 2 }} />
-      <Box sx={{ px: 2, mb: 1 }}>
-        <Typography variant="caption" sx={{ color: '#95a5a6', textTransform: 'uppercase' }}>
-          Development
-        </Typography>
+      <Box sx={{ mt: 'auto', borderTop: '1px solid #34495e' }}>
+        {user && (
+          <Box sx={{ p: 2 }}>
+            <Typography variant="caption" sx={{ color: '#95a5a6' }}>
+              Logged in as
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
+              {user.username}
+            </Typography>
+          </Box>
+        )}
+        <ListItem disablePadding>
+          <ListItemButton
+            onClick={handleLogout}
+            sx={{
+              '&:hover': { bgcolor: '#c0392b' },
+              color: 'white',
+            }}
+          >
+            <ListItemIcon sx={{ color: 'white', minWidth: 40 }}>
+              <LogoutIcon />
+            </ListItemIcon>
+            <ListItemText primary="Logout" />
+          </ListItemButton>
+        </ListItem>
       </Box>
-      <List>
-        {devMenuItems.map((item) => (
-          <ListItem key={item.path} disablePadding>
-            <ListItemButton
-              onClick={() => navigate(item.path)}
-              sx={{
-                '&:hover': { bgcolor: '#34495e' },
-                color: '#f39c12',
-              }}
-            >
-              <ListItemIcon sx={{ color: '#f39c12', minWidth: 40 }}>
-                {item.icon}
-              </ListItemIcon>
-              <ListItemText primary={item.label} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
     </Box>
   );
 };

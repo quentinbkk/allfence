@@ -75,11 +75,12 @@ export const rankingsApi = createApi({
       providesTags: ['Ranking'],
     }),
 
-    getTopFencersCumulativePoints: builder.query<FencerCumulativeData[], { bracket: string; weapon?: string; limit?: number }>({
-      query: ({ bracket, weapon, limit = 10 }) => {
+    getTopFencersCumulativePoints: builder.query<FencerCumulativeData[], { bracket: string; weapon?: string; gender?: string; limit?: number }>({
+      query: ({ bracket, weapon, gender, limit = 10 }) => {
         const params = new URLSearchParams();
         params.append('bracket', bracket);
         if (weapon) params.append('weapon', weapon);
+        if (gender) params.append('gender', gender);
         params.append('limit', limit.toString());
         return `/rankings/cumulative-points?${params.toString()}`;
       },

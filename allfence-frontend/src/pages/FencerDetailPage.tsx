@@ -49,24 +49,24 @@ export const FencerDetailPage: React.FC = () => {
 
   const totalPoints = fencer.rankings.reduce((sum, r) => sum + r.points, 0);
 
-  // Prepare data for performance graph (chronological order)
+  // Prepare data for performance graph (chronological order with cumulative points)
+  let cumulativePoints = 0;
   const performanceData = [...tournamentResults]
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
-    .map((result, index) => ({
-      name: `T${index + 1}`, // Simple tournament numbering
-      fullName: result.tournament_name,
-      date: result.date,
-      placement: result.placement,
-      points: result.points_awarded,
-    }));
+    .map((result, index) => {
+      cumulativePoints += result.points_awarded;
+      return {
+        name: `T${index + 1}`, // Simple tournament numbering
+        fullName: result.tournament_name,
+        date: result.date,
+        placement: result.placement,
+        points: result.points_awarded,
+        cumulativePoints: cumulativePoints,
+      };
+    });
 
-  // Calculate Y-axis domain dynamically based on actual placements
-  const placements = performanceData.map(d => d.placement);
-  const maxPlacement = Math.max(...placements, 10); // At least show up to 10th place
-  const minPlacement = Math.min(...placements, 1); // At least show 1st place
-  
-  // Create ticks from 1 to maxPlacement
-  const yAxisTicks = Array.from({ length: Math.min(maxPlacement, 20) }, (_, i) => i + 1);
+  // Calculate Y-axis domain for cumulative points
+  const maxPoints = Math.max(...performanceData.map(d => d.cumulativePoints), 100);
 
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
@@ -207,11 +207,8 @@ export const FencerDetailPage: React.FC = () => {
                   tick={{ fontSize: 11 }}
                 />
                 <YAxis 
-                  reversed={true}
-                  label={{ value: 'Placement (1st place at top)', angle: -90, position: 'insideLeft' }}
-                  domain={[minPlacement, maxPlacement]}
-                  ticks={yAxisTicks}
-                  tickFormatter={(value) => `${value}${value === 1 ? 'st' : value === 2 ? 'nd' : value === 3 ? 'rd' : 'th'}`}
+                  label={{ value: 'Cumulative Ranking Points', angle: -90, position: 'insideLeft' }}
+                  domain={[0, maxPoints]}
                 />
                 <Tooltip 
                   content={({ active, payload }) => {
@@ -230,7 +227,10 @@ export const FencerDetailPage: React.FC = () => {
                             {data.placement === 1 ? 'st' : data.placement === 2 ? 'nd' : data.placement === 3 ? 'rd' : 'th'}
                           </Typography>
                           <Typography variant="body2" color="primary">
-                            Points: +{data.points}
+                            Points Earned: +{data.points}
+                          </Typography>
+                          <Typography variant="body2" color="primary" sx={{ fontWeight: 'bold' }}>
+                            Total Points: {data.cumulativePoints}
                           </Typography>
                         </Paper>
                       );
@@ -241,12 +241,12 @@ export const FencerDetailPage: React.FC = () => {
                 <Legend />
                 <Line 
                   type="monotone" 
-                  dataKey="placement" 
+                  dataKey="cumulativePoints" 
                   stroke="#1976d2" 
                   strokeWidth={3}
                   dot={{ r: 6, fill: '#1976d2' }}
                   activeDot={{ r: 8 }}
-                  name="Placement"
+                  name="Ranking Points"
                 />
               </LineChart>
             </ResponsiveContainer>

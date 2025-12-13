@@ -337,7 +337,7 @@ Default credentials: admin / admin
 
 The database includes pre-populated realistic data:
 
-- **15 Clubs** across California locations
+- **15 Clubs** across US locations
 - **600 Fencers** distributed across:
   - 3 weapons (Foil, Épée, Sabre)
   - 5 age brackets (Youth, Cadet, Junior, Senior, Veteran)
