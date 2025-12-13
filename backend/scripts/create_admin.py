@@ -2,6 +2,11 @@
 Create default admin user for AllFence system
 Run this once to create admin account
 """
+import sys
+import os
+# Add parent directory to path to import src modules
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from src.database import get_session_context
 from src.models import User
 
