@@ -38,10 +38,10 @@ app.config['DEBUG'] = os.getenv('DEBUG', 'False').lower() == 'true'
 cors_origins = os.getenv('CORS_ORIGINS', '*')
 if cors_origins == '*':
     logger.warning("CORS is set to allow all origins. Set CORS_ORIGINS environment variable for production.")
-    CORS(app)
+    CORS(app, supports_credentials=True)
 else:
     allowed_origins = [origin.strip() for origin in cors_origins.split(',')]
-    CORS(app, origins=allowed_origins)
+    CORS(app, origins=allowed_origins, supports_credentials=True)
     logger.info(f"CORS enabled for origins: {allowed_origins}")
 
 # Database setup
