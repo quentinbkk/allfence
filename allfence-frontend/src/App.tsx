@@ -1,3 +1,17 @@
+/**
+ * Main Application Component
+ * 
+ * This is the root component that sets up:
+ * - Redux store for state management
+ * - Material-UI theming
+ * - React Router for page navigation
+ * - Authentication-based routing (protected vs public routes)
+ * 
+ * Route Structure:
+ * - /login: Public login page (no authentication required)
+ * - All other routes: Protected by ProtectedRoute component (requires authentication)
+ */
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Provider } from 'react-redux';
@@ -20,22 +34,32 @@ import LoginPage from './pages/LoginPage';
 import NotFoundPage from './pages/NotFoundPage';
 import './App.css';
 
+// Material-UI theme configuration
 const theme = createTheme({
   palette: {
-    primary: { main: '#1976d2' },
-    secondary: { main: '#dc004e' },
+    primary: { main: '#1976d2' },   // Blue primary color
+    secondary: { main: '#dc004e' },  // Pink secondary color
   },
 });
 
 function App() {
   return (
+    // Redux Provider wraps entire app to provide state management
     <Provider store={store}>
+      {/* Material-UI theme provider for consistent styling */}
       <ThemeProvider theme={theme}>
+        {/* React Router for client-side navigation */}
         <Router>
           <Routes>
+            {/* Public route - no authentication required */}
             <Route path="/login" element={<LoginPage />} />
+            
+            {/* Protected routes - authentication required */}
+            {/* ProtectedRoute checks auth and redirects to /login if not authenticated */}
             <Route element={<ProtectedRoute />}>
+              {/* AppLayout provides sidebar navigation for all protected pages */}
               <Route element={<AppLayout />}>
+                {/* Main application pages */}
                 <Route path="/" element={<HomePage />} />
                 <Route path="/home" element={<HomePage />} />
                 <Route path="/tournaments" element={<TournamentsPage />} />
@@ -48,7 +72,11 @@ function App() {
                 <Route path="/clubs" element={<ClubsPage />} />
                 <Route path="/clubs/:id" element={<ClubDetailPage />} />
                 <Route path="/data-structure" element={<DataStructurePage />} />
+                
+                {/* Development-only route (not shown in sidebar UI) */}
                 <Route path="/dev/season-simulation" element={<SeasonSimulationPage />} />
+                
+                {/* Catch-all route for 404 Not Found */}
                 <Route path="*" element={<NotFoundPage />} />
               </Route>
             </Route>
