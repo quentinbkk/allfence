@@ -494,9 +494,8 @@ See the `docs/` directory for detailed documentation:
 
 All core code is in `src/`. Tests are in `tests/`. Scripts in `scripts/` can be run directly.
 
-For Phase 3 (Web Interface), see `docs/PHASE3_WEB_INTERFACE.md`.
 =======
 - UC Berkeley School of Information - INFO 202 Course Staff
 - Flask and React communities for excellent documentation
 - Material-UI and Recharts for visualization libraries
->>>>>>> f2f94a8 (Add complete AllFence fencing management with README)
+
