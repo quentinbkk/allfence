@@ -51,34 +51,27 @@ function App() {
         {/* React Router for client-side navigation */}
         <Router>
           <Routes>
-            {/* Public route - no authentication required */}
-            <Route path="/login" element={<LoginPage />} />
-            
-            {/* Protected routes - authentication required */}
-            {/* ProtectedRoute checks auth and redirects to /login if not authenticated */}
-            <Route element={<ProtectedRoute />}>
-              {/* AppLayout provides sidebar navigation for all protected pages */}
-              <Route element={<AppLayout />}>
-                {/* Main application pages */}
-                <Route path="/" element={<HomePage />} />
-                <Route path="/home" element={<HomePage />} />
-                <Route path="/tournaments" element={<TournamentsPage />} />
-                <Route path="/tournaments/:id" element={<TournamentDetailPage />} />
-                <Route path="/fencers" element={<FencersPage />} />
-                <Route path="/fencers/:id" element={<FencerDetailPage />} />
-                <Route path="/rankings" element={<RankingsPage />} />
-                <Route path="/rankings/progress" element={<RankingsProgressPage />} />
-                <Route path="/rankings/clubs" element={<ClubRankingsPage />} />
-                <Route path="/clubs" element={<ClubsPage />} />
-                <Route path="/clubs/:id" element={<ClubDetailPage />} />
-                <Route path="/data-structure" element={<DataStructurePage />} />
-                
-                {/* Development-only route (not shown in sidebar UI) */}
-                <Route path="/dev/season-simulation" element={<SeasonSimulationPage />} />
-                
-                {/* Catch-all route for 404 Not Found */}
-                <Route path="*" element={<NotFoundPage />} />
-              </Route>
+            {/* All routes are now public - no authentication required */}
+            <Route element={<AppLayout />}>
+              {/* Main application pages */}
+              <Route path="/" element={<HomePage />} />
+              <Route path="/home" element={<HomePage />} />
+              <Route path="/tournaments" element={<TournamentsPage />} />
+              <Route path="/tournaments/:id" element={<TournamentDetailPage />} />
+              <Route path="/fencers" element={<FencersPage />} />
+              <Route path="/fencers/:id" element={<FencerDetailPage />} />
+              <Route path="/rankings" element={<RankingsPage />} />
+              <Route path="/rankings/progress" element={<RankingsProgressPage />} />
+              <Route path="/rankings/clubs" element={<ClubRankingsPage />} />
+              <Route path="/clubs" element={<ClubsPage />} />
+              <Route path="/clubs/:id" element={<ClubDetailPage />} />
+              <Route path="/data-structure" element={<DataStructurePage />} />
+              
+              {/* Development-only route (not shown in sidebar UI) */}
+              <Route path="/dev/season-simulation" element={<SeasonSimulationPage />} />
+              
+              {/* Catch-all route for 404 Not Found */}
+              <Route path="*" element={<NotFoundPage />} />
             </Route>
           </Routes>
         </Router>

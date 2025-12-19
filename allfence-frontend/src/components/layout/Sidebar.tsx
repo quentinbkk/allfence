@@ -8,21 +8,11 @@ import {
   EmojiEventsOutlined as ClubRankingsIcon,
   AccountTree as DataStructureIcon,
   Home as HomeIcon,
-  Logout as LogoutIcon,
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-import { useAppDispatch, useAppSelector } from '../../store/hooks';
-import { logout } from '../../store/slices/authSlice';
 
 export const Sidebar: React.FC = () => {
   const navigate = useNavigate();
-  const dispatch = useAppDispatch();
-  const { user } = useAppSelector((state) => state.auth);
-
-  const handleLogout = () => {
-    dispatch(logout());
-    navigate('/login');
-  };
 
   const menuItems = [
     { label: 'Home', icon: <HomeIcon />, path: '/' },
@@ -59,32 +49,6 @@ export const Sidebar: React.FC = () => {
           </ListItem>
         ))}
       </List>
-      <Box sx={{ mt: 'auto', borderTop: '1px solid #34495e' }}>
-        {user && (
-          <Box sx={{ p: 2 }}>
-            <Typography variant="caption" sx={{ color: '#95a5a6' }}>
-              Logged in as
-            </Typography>
-            <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
-              {user.username}
-            </Typography>
-          </Box>
-        )}
-        <ListItem disablePadding>
-          <ListItemButton
-            onClick={handleLogout}
-            sx={{
-              '&:hover': { bgcolor: '#c0392b' },
-              color: 'white',
-            }}
-          >
-            <ListItemIcon sx={{ color: 'white', minWidth: 40 }}>
-              <LogoutIcon />
-            </ListItemIcon>
-            <ListItemText primary="Logout" />
-          </ListItemButton>
-        </ListItem>
-      </Box>
     </Box>
   );
 };
