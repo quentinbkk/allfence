@@ -17,7 +17,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
 import AppLayout from './components/layout/AppLayout';
-import ProtectedRoute from './components/ProtectedRoute';
 import TournamentsPage from './pages/TournamentsPage';
 import TournamentDetailPage from './pages/TournamentDetailPage';
 import FencersPage from './pages/FencersPage';
@@ -30,7 +29,6 @@ import ClubDetailPage from './pages/ClubDetailPage';
 import SeasonSimulationPage from './pages/SeasonSimulationPage';
 import DataStructurePage from './pages/DataStructurePage';
 import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage';
 import NotFoundPage from './pages/NotFoundPage';
 import './App.css';
 
