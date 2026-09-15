@@ -12,6 +12,7 @@ from sqlalchemy.pool import StaticPool, NullPool
 from contextlib import contextmanager
 from .models import Base
 import os
+import shutil
 import logging
 
 # Configure logging
@@ -22,10 +23,20 @@ logger = logging.getLogger(__name__)
 DATABASE_URL = os.getenv('DATABASE_URL')
 
 if not DATABASE_URL:
-    # SQLite fallback for local development
     db_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'database')
-    os.makedirs(db_dir, exist_ok=True)
     db_path = os.path.join(db_dir, 'fencing_management.db')
+
+    if os.getenv('VERCEL'):
+        # The deployment bundle is mounted read-only, so SQLite can't open
+        # the shipped file directly. Copy the pre-built demo database into
+        # /tmp (writable, ephemeral per instance) once per cold start.
+        tmp_path = '/tmp/fencing_management.db'
+        if not os.path.exists(tmp_path):
+            shutil.copyfile(db_path, tmp_path)
+        db_path = tmp_path
+    else:
+        os.makedirs(db_dir, exist_ok=True)
+
     DATABASE_URL = f"sqlite:///{db_path}"
     logger.info(f"Using SQLite database at {db_path}")
 else:

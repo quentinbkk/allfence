@@ -18,6 +18,10 @@ build/
 *.sqlite3
 data/database/*.db
 
+# Except the pre-built read-only demo database shipped with the deployment
+# (regenerate with: python backend/scripts/build_demo_db.py)
+!backend/data/database/fencing_management.db
+
 # IDE
 .vscode/
 .idea/
@@ -77,3 +81,4 @@ allfence-frontend/.nyc_output/
 # Misc
 *.local
 .DS_Store
+.vercel

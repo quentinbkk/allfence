@@ -1,64 +1,42 @@
-# AllFence - Grader Access Instructions
+# AllFence - Grader / Reviewer Access
 
-## Login Credentials
+## Live Demo
 
-**URL:** https://allfence.vercel.app
+**URL:** _add your deployed Vercel URL here after deploying_
 
-**Username:** `admin`  
-**Password:** `admin123`
+No login is required - the app is open access. Every page loads directly.
 
 ## About AllFence
 
-AllFence is a comprehensive fencing tournament management system that tracks:
-- **Tournaments**: View and manage fencing tournaments with brackets, results, and standings
+AllFence is a fencing tournament management system that tracks:
+- **Tournaments**: Browse fencing tournaments with brackets, results, and standings
 - **Fencers**: Individual fencer profiles with performance statistics and rankings
-- **Rankings**: National rankings by bracket (Senior, U20, U17, U14, U11) and weapon (Foil, Epee, Sabre)
+- **Rankings**: Rankings by age bracket (U11, U13, U15, Cadet, Junior, Senior) and weapon (Foil, Epee, Sabre)
 - **Clubs**: Club profiles with member rosters and club rankings
-- **Data Structure**: Visualization of the system architecture
-
-## Features
-
-### Authentication
-- All pages require login to access
-- Only users with accounts can view the system
-- Admin access is granted to graders
-
-### Rankings System
-- Rankings calculated based on tournament performance
-- Points awarded based on tournament category and placement
-- Filters available for:
-  - Age bracket (Senior, U20, U17, U14, U11)
-  - Weapon type (Foil, Epee, Sabre)
-  - Gender (Male, Female)
-
-### Performance Tracking
-- Cumulative ranking points over time
-- Rankings progress visualization for top fencers
-- Individual fencer performance graphs
-
-### Club Management
-- Club rankings based on total member points
-- Club roster with detailed fencer information
-- Performance statistics by club
+- **Data Structure**: Live-rendered documentation of the database schema, entity relationships, and API endpoints
 
 ## Navigation
 
-The sidebar on the left provides access to all major sections:
-- **Home**: Overview and quick stats
-- **Tournaments**: Browse and view tournament details
-- **Fencers**: Search and view fencer profiles
-- **Rankings**: National rankings with filtering
-- **Club Rankings**: Club performance leaderboard
-- **Clubs**: Club directory and details
-- **Data Structure**: System architecture diagram
+The sidebar provides access to all sections:
+- **Home** - Overview and quick stats
+- **Tournaments** - Browse tournaments and their results
+- **Fencers** - Search and view fencer profiles
+- **Rankings** - Rankings leaderboard with filtering, plus a progress-over-time chart
+- **Club Rankings** - Club performance leaderboard
+- **Clubs** - Club directory and details
+- **Data Structure** - System architecture, addressing the INFO 202 metadata/schema-documentation requirement directly in the UI
 
 ## Notes for Graders
 
-- The system uses **read-only production data**
-- Season simulation is disabled in production (was available during development)
-- Data includes ~600 fencers across 15 clubs
-- All tournament results and rankings are pre-calculated
-- The database resets to initial state after backend inactivity (Render free tier limitation)
+- This is a **read-only public demo**: the backend rejects all write requests
+  (creating tournaments, recording results, season simulation) by design, since
+  there's no authentication gating them. See the README's "Deployment" section
+  for why.
+- The data is realistic synthetic data: 15 clubs, 600 fencers, 100 completed
+  tournaments with recorded results and rankings.
+- To see the full read/write functionality (tournament creation, result
+  recording, season simulation), clone the repo and run it locally per the
+  README's "Installation & Setup" section.
 
 ## Support
 

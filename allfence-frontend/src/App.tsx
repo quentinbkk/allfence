@@ -1,36 +1,37 @@
 /**
  * Main Application Component
- * 
+ *
  * This is the root component that sets up:
  * - Redux store for state management
  * - Material-UI theming
  * - React Router for page navigation
- * - Authentication-based routing (protected vs public routes)
- * 
- * Route Structure:
- * - /login: Public login page (no authentication required)
- * - All other routes: Protected by ProtectedRoute component (requires authentication)
+ *
+ * This is a public, read-only demo - all routes are open and every page is
+ * lazy-loaded so the initial bundle only ships the code a visitor's first
+ * page actually needs.
  */
 
+import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Provider } from 'react-redux';
+import { Box, CircularProgress } from '@mui/material';
 import { store } from './store/store';
 import AppLayout from './components/layout/AppLayout';
-import TournamentsPage from './pages/TournamentsPage';
-import TournamentDetailPage from './pages/TournamentDetailPage';
-import FencersPage from './pages/FencersPage';
-import FencerDetailPage from './pages/FencerDetailPage';
-import RankingsPage from './pages/RankingsPage';
-import RankingsProgressPage from './pages/RankingsProgressPage';
-import ClubRankingsPage from './pages/ClubRankingsPage';
-import ClubsPage from './pages/ClubsPage';
-import ClubDetailPage from './pages/ClubDetailPage';
-import SeasonSimulationPage from './pages/SeasonSimulationPage';
-import DataStructurePage from './pages/DataStructurePage';
-import HomePage from './pages/HomePage';
-import NotFoundPage from './pages/NotFoundPage';
 import './App.css';
+
+const TournamentsPage = lazy(() => import('./pages/TournamentsPage'));
+const TournamentDetailPage = lazy(() => import('./pages/TournamentDetailPage'));
+const FencersPage = lazy(() => import('./pages/FencersPage'));
+const FencerDetailPage = lazy(() => import('./pages/FencerDetailPage'));
+const RankingsPage = lazy(() => import('./pages/RankingsPage'));
+const RankingsProgressPage = lazy(() => import('./pages/RankingsProgressPage'));
+const ClubRankingsPage = lazy(() => import('./pages/ClubRankingsPage'));
+const ClubsPage = lazy(() => import('./pages/ClubsPage'));
+const ClubDetailPage = lazy(() => import('./pages/ClubDetailPage'));
+const DataStructurePage = lazy(() => import('./pages/DataStructurePage'));
+const HomePage = lazy(() => import('./pages/HomePage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 // Material-UI theme configuration
 const theme = createTheme({
@@ -40,6 +41,12 @@ const theme = createTheme({
   },
 });
 
+const PageFallback = () => (
+  <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
+    <CircularProgress />
+  </Box>
+);
+
 function App() {
   return (
     // Redux Provider wraps entire app to provide state management
@@ -48,30 +55,28 @@ function App() {
       <ThemeProvider theme={theme}>
         {/* React Router for client-side navigation */}
         <Router>
-          <Routes>
-            {/* All routes are now public - no authentication required */}
-            <Route element={<AppLayout />}>
-              {/* Main application pages */}
-              <Route path="/" element={<HomePage />} />
-              <Route path="/home" element={<HomePage />} />
-              <Route path="/tournaments" element={<TournamentsPage />} />
-              <Route path="/tournaments/:id" element={<TournamentDetailPage />} />
-              <Route path="/fencers" element={<FencersPage />} />
-              <Route path="/fencers/:id" element={<FencerDetailPage />} />
-              <Route path="/rankings" element={<RankingsPage />} />
-              <Route path="/rankings/progress" element={<RankingsProgressPage />} />
-              <Route path="/rankings/clubs" element={<ClubRankingsPage />} />
-              <Route path="/clubs" element={<ClubsPage />} />
-              <Route path="/clubs/:id" element={<ClubDetailPage />} />
-              <Route path="/data-structure" element={<DataStructurePage />} />
-              
-              {/* Development-only route (not shown in sidebar UI) */}
-              <Route path="/dev/season-simulation" element={<SeasonSimulationPage />} />
-              
-              {/* Catch-all route for 404 Not Found */}
-              <Route path="*" element={<NotFoundPage />} />
-            </Route>
-          </Routes>
+          <Suspense fallback={<PageFallback />}>
+            <Routes>
+              <Route element={<AppLayout />}>
+                {/* Main application pages */}
+                <Route path="/" element={<HomePage />} />
+                <Route path="/home" element={<HomePage />} />
+                <Route path="/tournaments" element={<TournamentsPage />} />
+                <Route path="/tournaments/:id" element={<TournamentDetailPage />} />
+                <Route path="/fencers" element={<FencersPage />} />
+                <Route path="/fencers/:id" element={<FencerDetailPage />} />
+                <Route path="/rankings" element={<RankingsPage />} />
+                <Route path="/rankings/progress" element={<RankingsProgressPage />} />
+                <Route path="/rankings/clubs" element={<ClubRankingsPage />} />
+                <Route path="/clubs" element={<ClubsPage />} />
+                <Route path="/clubs/:id" element={<ClubDetailPage />} />
+                <Route path="/data-structure" element={<DataStructurePage />} />
+
+                {/* Catch-all route for 404 Not Found */}
+                <Route path="*" element={<NotFoundPage />} />
+              </Route>
+            </Routes>
+          </Suspense>
         </Router>
       </ThemeProvider>
     </Provider>

@@ -3,6 +3,15 @@ Flask API Server for AllFence Fencing Management System
 Serves REST endpoints for tournaments, fencers, and rankings
 """
 
+import sys
+from pathlib import Path
+
+# Vercel's Python runtime imports this file without setting its own directory
+# as the working directory or on sys.path, so `from src...` below would
+# otherwise fail with ModuleNotFoundError. Make the import work regardless of
+# the caller's cwd (Vercel, gunicorn, `python app.py` locally, etc.).
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import logging
@@ -20,12 +29,23 @@ from src.season_simulation import simulate_full_season
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Initialize database on startup (if needed)
-try:
-    from init_production_db import initialize_if_needed
-    initialize_if_needed()
-except Exception as e:
-    logger.warning(f"Could not run database initialization: {e}")
+# DEMO_MODE locks the API to read-only. This is a public showcase deployment
+# with a pre-populated database and no login system, so every mutating
+# endpoint (create/update/delete/simulate/reset) must stay disabled here -
+# otherwise anyone with the URL could wipe or spam the demo data. Defaults to
+# on; only disable it (DEMO_MODE=false) for local development.
+DEMO_MODE = os.getenv('DEMO_MODE', 'true').lower() == 'true'
+
+# On Vercel the deployment bundle (including the SQLite file) is read-only,
+# and DEMO_MODE means nothing ever writes to it, so the data-loading
+# subprocess step (meant for a fresh, empty database) is unnecessary and
+# would just fail against a read-only filesystem.
+if not os.getenv('VERCEL'):
+    try:
+        from init_production_db import initialize_if_needed
+        initialize_if_needed()
+    except Exception as e:
+        logger.warning(f"Could not run database initialization: {e}")
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -43,6 +63,16 @@ else:
     allowed_origins = [origin.strip() for origin in cors_origins.split(',')]
     CORS(app, origins=allowed_origins, supports_credentials=True)
     logger.info(f"CORS enabled for origins: {allowed_origins}")
+
+
+@app.before_request
+def block_mutations_in_demo_mode():
+    """Reject any write request while DEMO_MODE is on, before it reaches the DB."""
+    if DEMO_MODE and request.method not in ('GET', 'HEAD', 'OPTIONS'):
+        return jsonify({
+            'error': 'This is a read-only public demo. Write operations are disabled.'
+        }), 403
+
 
 # Database setup
 init_db()  # Initialize tables

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   Container,
@@ -15,133 +15,22 @@ import {
   TableHead,
   TableRow,
   Paper,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  Checkbox,
 } from '@mui/material';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import { useGetTournamentByIdQuery, useUpdateTournamentMutation, useGetTournamentParticipantsQuery, useUnregisterFencerMutation } from '../api/tournaments';
+import { useGetTournamentByIdQuery, useGetTournamentParticipantsQuery } from '../api/tournaments';
 import { useGetRankingsQuery } from '../api/rankings';
-import { useAppSelector } from '../store/hooks';
 import { LoadingSpinner, ErrorMessage, StatusBadge } from '../components/common';
 import { formatDate } from '../utils/formatters';
 import { TournamentStatus } from '../types';
-import RegisterFencerDialog from '../components/forms/RegisterFencerDialog';
-import { RecordResultsDialog } from '../components/forms/RecordResultsDialog';
 
 export const TournamentDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const tournamentId = parseInt(id || '0');
-  const user = useAppSelector((state) => state.auth.user);
 
   const { data: tournament, isLoading, error, refetch } = useGetTournamentByIdQuery(tournamentId);
-  const { data: participants = [], refetch: refetchParticipants } = useGetTournamentParticipantsQuery(tournamentId);
+  const { data: participants = [] } = useGetTournamentParticipantsQuery(tournamentId);
   const { data: rankings = [] } = useGetRankingsQuery({ bracket: tournament?.bracket || '' });
-  const [updateTournament] = useUpdateTournamentMutation();
-  const [unregisterFencer] = useUnregisterFencerMutation();
-
-  const [updatingStatus, setUpdatingStatus] = useState(false);
-  const [selectedStatus, setSelectedStatus] = useState<TournamentStatus | ''>('');
-  const [registerDialogOpen, setRegisterDialogOpen] = useState(false);
-  const [resultsDialogOpen, setResultsDialogOpen] = useState(false);
-  const [selectedParticipants, setSelectedParticipants] = useState<number[]>([]);
-
-  // Update selected status when tournament data loads
-  React.useEffect(() => {
-    if (tournament) {
-      setSelectedStatus(tournament.status as TournamentStatus);
-    }
-  }, [tournament]);
-
-  const handleSaveStatus = async () => {
-    if (!selectedStatus) return;
-    
-    setUpdatingStatus(true);
-    try {
-      await updateTournament({
-        id: tournamentId,
-        data: { status: selectedStatus },
-      }).unwrap();
-      refetch();
-    } catch (err) {
-      console.error('Failed to update status:', err);
-    } finally {
-      setUpdatingStatus(false);
-    }
-  };
-
-  const handleToggleParticipant = (fencerId: number) => {
-    setSelectedParticipants(prev => 
-      prev.includes(fencerId) ? prev.filter(id => id !== fencerId) : [...prev, fencerId]
-    );
-  };
-
-  const handleToggleAll = () => {
-    // Only allow selecting participants without results
-    const selectableParticipants = participants.filter(p => !p.placement || p.placement === 0);
-    if (selectedParticipants.length === selectableParticipants.length) {
-      setSelectedParticipants([]);
-    } else {
-      setSelectedParticipants(selectableParticipants.map(p => p.fencer_id));
-    }
-  };
-
-  const handleDeleteSelected = async () => {
-    if (selectedParticipants.length === 0) return;
-    
-    if (!window.confirm(`Remove ${selectedParticipants.length} participant(s) from this tournament?`)) {
-      return;
-    }
-
-    try {
-      await Promise.all(
-        selectedParticipants.map(fencerId => 
-          unregisterFencer({ tournament_id: tournamentId, fencer_id: fencerId }).unwrap()
-        )
-      );
-      setSelectedParticipants([]);
-      refetchParticipants();
-      refetch();
-    } catch (err: any) {
-      alert(err.data?.error || 'Failed to remove some participants');
-    }
-  };
-
-  const handleKeepSelectedOnly = async () => {
-    if (selectedParticipants.length === 0) {
-      alert('Please select at least one participant to keep');
-      return;
-    }
-
-    const participantsToDelete = participants
-      .filter(p => !selectedParticipants.includes(p.fencer_id) && (!p.placement || p.placement === 0))
-      .map(p => p.fencer_id);
-
-    if (participantsToDelete.length === 0) {
-      alert('No participants to remove');
-      return;
-    }
-
-    if (!window.confirm(`Keep ${selectedParticipants.length} selected participant(s) and remove ${participantsToDelete.length} other(s)?`)) {
-      return;
-    }
-
-    try {
-      await Promise.all(
-        participantsToDelete.map(fencerId => 
-          unregisterFencer({ tournament_id: tournamentId, fencer_id: fencerId }).unwrap()
-        )
-      );
-      setSelectedParticipants([]);
-      refetchParticipants();
-      refetch();
-    } catch (err: any) {
-      alert(err.data?.error || 'Failed to remove some participants');
-    }
-  };
 
   if (isLoading) return <LoadingSpinner />;
   if (error || !tournament) return <ErrorMessage message="Failed to load tournament" onRetry={refetch} />;
@@ -267,70 +156,6 @@ export const TournamentDetailPage: React.FC = () => {
         </CardContent>
       </Card>
 
-      {/* Admin Actions */}
-      {user?.is_admin && (
-        <Card sx={{ mb: 4 }}>
-          <CardContent>
-            <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 3 }}>
-              Admin Actions
-            </Typography>
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={6} md={4}>
-                <FormControl fullWidth>
-                  <InputLabel>Update Status</InputLabel>
-                  <Select
-                    value={selectedStatus}
-                    onChange={(e) => setSelectedStatus(e.target.value as TournamentStatus)}
-                    label="Update Status"
-                    disabled={updatingStatus}
-                  >
-                    <MenuItem value={TournamentStatus.UPCOMING}>Upcoming</MenuItem>
-                    <MenuItem value={TournamentStatus.REGISTRATION_OPEN}>Registration Open</MenuItem>
-                    <MenuItem value={TournamentStatus.IN_PROGRESS}>In Progress</MenuItem>
-                    <MenuItem value={TournamentStatus.COMPLETED}>Completed</MenuItem>
-                    <MenuItem value={TournamentStatus.CANCELLED}>Cancelled</MenuItem>
-                  </Select>
-                </FormControl>
-                <Button
-                  fullWidth
-                  variant="contained"
-                  color="success"
-                  sx={{ mt: 1, height: '40px' }}
-                  onClick={handleSaveStatus}
-                  disabled={updatingStatus || selectedStatus === tournament.status}
-                >
-                  {updatingStatus ? 'Saving...' : 'Save Status'}
-                </Button>
-              </Grid>
-              <Grid item xs={12} sm={6} md={4}>
-                <Button
-                  fullWidth
-                  variant="contained"
-                  color="primary"
-                  sx={{ height: '56px' }}
-                  disabled={tournament.status === TournamentStatus.COMPLETED || tournament.status === TournamentStatus.CANCELLED}
-                  onClick={() => setRegisterDialogOpen(true)}
-                >
-                  📝 Register Fencers
-                </Button>
-              </Grid>
-              <Grid item xs={12} sm={6} md={4}>
-                <Button
-                  fullWidth
-                  variant="contained"
-                  color="secondary"
-                  sx={{ height: '56px' }}
-                  disabled={tournament.status !== TournamentStatus.IN_PROGRESS && tournament.status !== TournamentStatus.COMPLETED}
-                  onClick={() => setResultsDialogOpen(true)}
-                >
-                  🏅 Record Results
-                </Button>
-              </Grid>
-            </Grid>
-          </CardContent>
-        </Card>
-      )}
-
       {/* Podium Section - Only for completed tournaments with results */}
       {tournament.status === TournamentStatus.COMPLETED && top3.length > 0 && (
         <Card sx={{ mb: 4, background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
@@ -338,7 +163,7 @@ export const TournamentDetailPage: React.FC = () => {
             <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 4, color: 'white', textAlign: 'center' }}>
               🏆 Final Results - Top 3
             </Typography>
-            
+
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', gap: 3, mb: 2 }}>
               {/* Second Place */}
               {top3[1] && (
@@ -365,9 +190,9 @@ export const TournamentDetailPage: React.FC = () => {
                   <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.9)', mb: 1 }}>
                     {top3[1].club_name || 'No Club'}
                   </Typography>
-                  <Box sx={{ 
-                    backgroundColor: 'rgba(255,255,255,0.2)', 
-                    borderRadius: 2, 
+                  <Box sx={{
+                    backgroundColor: 'rgba(255,255,255,0.2)',
+                    borderRadius: 2,
                     padding: 1,
                     backdropFilter: 'blur(10px)'
                   }}>
@@ -404,9 +229,9 @@ export const TournamentDetailPage: React.FC = () => {
                   <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.95)', mb: 1 }}>
                     {top3[0].club_name || 'No Club'}
                   </Typography>
-                  <Box sx={{ 
-                    backgroundColor: 'rgba(255,255,255,0.25)', 
-                    borderRadius: 2, 
+                  <Box sx={{
+                    backgroundColor: 'rgba(255,255,255,0.25)',
+                    borderRadius: 2,
                     padding: 1.5,
                     backdropFilter: 'blur(10px)'
                   }}>
@@ -442,9 +267,9 @@ export const TournamentDetailPage: React.FC = () => {
                   <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.9)', mb: 1 }}>
                     {top3[2].club_name || 'No Club'}
                   </Typography>
-                  <Box sx={{ 
-                    backgroundColor: 'rgba(255,255,255,0.2)', 
-                    borderRadius: 2, 
+                  <Box sx={{
+                    backgroundColor: 'rgba(255,255,255,0.2)',
+                    borderRadius: 2,
                     padding: 1,
                     backdropFilter: 'blur(10px)'
                   }}>
@@ -464,30 +289,10 @@ export const TournamentDetailPage: React.FC = () => {
         <CardContent>
           <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
             <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-              {tournament.status === TournamentStatus.COMPLETED && hasResults 
+              {tournament.status === TournamentStatus.COMPLETED && hasResults
                 ? `All Results (${participants.length})`
                 : `Registered Participants (${participants.length})`}
             </Typography>
-            {user?.is_admin && selectedParticipants.length > 0 && (
-              <Box sx={{ display: 'flex', gap: 1 }}>
-                <Button
-                  variant="outlined"
-                  color="error"
-                  size="small"
-                  onClick={handleDeleteSelected}
-                >
-                  Remove Selected ({selectedParticipants.length})
-                </Button>
-                <Button
-                  variant="outlined"
-                  color="primary"
-                  size="small"
-                  onClick={handleKeepSelectedOnly}
-                >
-                  Keep Selected Only
-                </Button>
-              </Box>
-            )}
           </Box>
 
           {participants.length === 0 ? (
@@ -497,15 +302,6 @@ export const TournamentDetailPage: React.FC = () => {
               <Table size="small">
                 <TableHead sx={{ backgroundColor: '#f5f5f5' }}>
                   <TableRow>
-                    {user?.is_admin && (
-                      <TableCell padding="checkbox">
-                        <Checkbox
-                          checked={selectedParticipants.length > 0 && selectedParticipants.length === participants.filter(p => !p.placement || p.placement === 0).length}
-                          indeterminate={selectedParticipants.length > 0 && selectedParticipants.length < participants.filter(p => !p.placement || p.placement === 0).length}
-                          onChange={handleToggleAll}
-                        />
-                      </TableCell>
-                    )}
                     {tournament.status === TournamentStatus.COMPLETED && hasResults && (
                       <TableCell sx={{ fontWeight: 'bold', width: 80 }}>Place</TableCell>
                     )}
@@ -523,35 +319,24 @@ export const TournamentDetailPage: React.FC = () => {
                 <TableBody>
                   {sortedParticipants.map((participant) => {
                     const hasPlacement = participant.placement && participant.placement > 0;
-                    const isSelected = selectedParticipants.includes(participant.fencer_id);
                     const isTopThree = hasPlacement && participant.placement <= 3;
-                    
+
                     return (
-                      <TableRow 
-                        key={participant.result_id} 
-                        hover 
-                        selected={isSelected}
+                      <TableRow
+                        key={participant.result_id}
+                        hover
                         sx={{
-                          backgroundColor: isTopThree 
+                          backgroundColor: isTopThree
                             ? participant.placement === 1 ? 'rgba(255, 215, 0, 0.1)'
                             : participant.placement === 2 ? 'rgba(192, 192, 192, 0.1)'
                             : 'rgba(205, 127, 50, 0.1)'
                             : 'inherit'
                         }}
                       >
-                        {user?.is_admin && (
-                          <TableCell padding="checkbox">
-                            <Checkbox
-                              checked={isSelected}
-                              onChange={() => handleToggleParticipant(participant.fencer_id)}
-                              disabled={hasPlacement}
-                            />
-                          </TableCell>
-                        )}
                         {tournament.status === TournamentStatus.COMPLETED && hasResults && (
                           <TableCell>
                             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                              <Typography sx={{ 
+                              <Typography sx={{
                                 fontWeight: isTopThree ? 'bold' : 'semibold',
                                 fontSize: isTopThree ? '1.1rem' : '1rem'
                               }}>
@@ -568,8 +353,8 @@ export const TournamentDetailPage: React.FC = () => {
                         <TableCell>{participant.weapon}</TableCell>
                         {tournament.status !== TournamentStatus.COMPLETED && (
                           <TableCell>
-                            <Typography 
-                              sx={{ 
+                            <Typography
+                              sx={{
                                 fontWeight: 'bold',
                                 color: participant.current_rank ? 'primary.main' : 'text.secondary'
                               }}
@@ -580,7 +365,7 @@ export const TournamentDetailPage: React.FC = () => {
                         )}
                         {(tournament.status === TournamentStatus.COMPLETED || hasResults) && (
                           <TableCell>
-                            <Typography sx={{ 
+                            <Typography sx={{
                               fontWeight: participant.points_awarded > 0 ? 'bold' : 'normal',
                               color: participant.points_awarded > 0 ? 'success.main' : 'text.secondary'
                             }}>
@@ -597,33 +382,6 @@ export const TournamentDetailPage: React.FC = () => {
           )}
         </CardContent>
       </Card>
-
-      {/* Register Fencer Dialog */}
-      {tournament && (
-        <RegisterFencerDialog
-          open={registerDialogOpen}
-          tournament={tournament}
-          onClose={() => setRegisterDialogOpen(false)}
-          onSuccess={() => {
-            refetchParticipants();
-            refetch();
-          }}
-        />
-      )}
-
-      {/* Record Results Dialog */}
-      {tournament && (
-        <RecordResultsDialog
-          open={resultsDialogOpen}
-          tournament={tournament}
-          participants={participants}
-          onClose={() => setResultsDialogOpen(false)}
-          onSuccess={() => {
-            refetchParticipants();
-            refetch();
-          }}
-        />
-      )}
     </Container>
   );
 };

@@ -21,26 +21,22 @@ import {
   Paper,
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { useGetTournamentsQuery, useCreateTournamentMutation } from '../api/tournaments';
+import { useGetTournamentsQuery } from '../api/tournaments';
 import { useAppDispatch, useAppSelector } from '../store/hooks';
 import { setTournamentFilters } from '../store/slices/uiSlice';
 import { LoadingSpinner, ErrorMessage, StatusBadge } from '../components/common';
 import { formatDate } from '../utils/formatters';
 import { WEAPON_CHOICES, BRACKET_CHOICES } from '../utils/constants';
 import { TournamentStatus, WeaponType, AgeBracket } from '../types';
-import TournamentFormDialog from '../components/forms/TournamentFormDialog';
 
 export const TournamentsPage: React.FC = () => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const filters = useAppSelector((state) => state.ui.tournamentFilters);
-  const { user } = useAppSelector((state) => state.auth);
   const [searchText, setSearchText] = useState('');
-  const [dialogOpen, setDialogOpen] = useState(false);
 
   // Fetch tournaments with filters
   const { data: tournaments = [], isLoading, error, refetch } = useGetTournamentsQuery(filters);
-  const [createTournament] = useCreateTournamentMutation();
 
   // Filter tournaments by search text
   const filteredTournaments = tournaments.filter((t) =>
@@ -74,11 +70,6 @@ export const TournamentsPage: React.FC = () => {
     );
   };
 
-  const handleCreateTournament = async (data: any) => {
-    await createTournament(data).unwrap();
-    refetch();
-  };
-
   if (isLoading) return <LoadingSpinner />;
   if (error) return <ErrorMessage message="Failed to load tournaments" onRetry={refetch} />;
 
@@ -88,11 +79,6 @@ export const TournamentsPage: React.FC = () => {
         <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
           🏆 Tournaments
         </Typography>
-        {user?.is_admin && (
-          <Button variant="contained" color="primary" onClick={() => setDialogOpen(true)}>
-            + New Tournament
-          </Button>
-        )}
       </Box>
 
       {/* Filters Card */}
@@ -241,12 +227,6 @@ export const TournamentsPage: React.FC = () => {
           </Typography>
         </Box>
       )}
-
-      <TournamentFormDialog
-        open={dialogOpen}
-        onClose={() => setDialogOpen(false)}
-        onSubmit={handleCreateTournament}
-      />
     </Container>
   );
 };

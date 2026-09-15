@@ -1,0 +1,8 @@
+{
+  "buildCommand": "cd allfence-frontend && npm install && npm run build",
+  "outputDirectory": "allfence-frontend/dist",
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/index" },
+    { "source": "/((?!api|assets).*)", "destination": "/index.html" }
+  ]
+}

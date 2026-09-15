@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { Club } from '../types';
 
-const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:5001/api';
+const API_URL = (import.meta.env.VITE_API_URL as string) || '/api';
 
 interface CumulativePointsData {
   date: string;
@@ -12,16 +12,7 @@ interface CumulativePointsData {
 
 export const clubsApi = createApi({
   reducerPath: 'clubsApi',
-  baseQuery: fetchBaseQuery({
-    baseUrl: API_URL,
-    prepareHeaders: (headers) => {
-      const token = localStorage.getItem('authToken');
-      if (token) {
-        headers.set('Authorization', `Bearer ${token}`);
-      }
-      return headers;
-    },
-  }),
+  baseQuery: fetchBaseQuery({ baseUrl: API_URL }),
   tagTypes: ['Club'],
   endpoints: (builder) => ({
     getClubs: builder.query<Club[], void>({

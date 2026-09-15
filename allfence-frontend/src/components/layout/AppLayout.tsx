@@ -1,17 +1,18 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import { Box } from '@mui/material';
 import Sidebar from './Sidebar';
 
 export const AppLayout: React.FC = () => {
   return (
-    <div className="flex h-screen bg-gray-50">
+    <Box sx={{ display: 'flex', height: '100vh', bgcolor: '#fafafa' }}>
       <Sidebar />
-      <div className="flex-1 flex flex-col overflow-hidden">
-        <main className="flex-1 overflow-auto">
+      <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+        <Box component="main" sx={{ flex: 1, overflow: 'auto' }}>
           <Outlet />
-        </main>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   Container,
@@ -19,30 +19,18 @@ import {
   Chip,
 } from '@mui/material';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { useGetFencerByIdQuery, useUpdateFencerMutation, useGetFencerResultsQuery, useGetFencerUpcomingTournamentsQuery } from '../api/fencers';
-import { useGetClubsQuery } from '../api/clubs';
-import { useAppSelector } from '../store/hooks';
+import { useGetFencerByIdQuery, useGetFencerResultsQuery, useGetFencerUpcomingTournamentsQuery } from '../api/fencers';
 import { LoadingSpinner, ErrorMessage } from '../components/common';
 import { formatDate, getInitials } from '../utils/formatters';
-import FencerEditDialog from '../components/forms/FencerEditDialog';
 
 export const FencerDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const fencerId = parseInt(id || '0');
-  const { user } = useAppSelector((state) => state.auth);
-  const [dialogOpen, setDialogOpen] = useState(false);
 
   const { data: fencer, isLoading, error, refetch } = useGetFencerByIdQuery(fencerId);
   const { data: tournamentResults = [] } = useGetFencerResultsQuery(fencerId);
   const { data: upcomingTournaments = [] } = useGetFencerUpcomingTournamentsQuery(fencerId);
-  const { data: clubs = [] } = useGetClubsQuery();
-  const [updateFencer] = useUpdateFencerMutation();
-
-  const handleUpdateFencer = async (data: any) => {
-    await updateFencer({ id: fencerId, data }).unwrap();
-    refetch();
-  };
 
   if (isLoading) return <LoadingSpinner />;
   if (error || !fencer) return <ErrorMessage message="Failed to load fencer" onRetry={refetch} />;
@@ -74,11 +62,6 @@ export const FencerDetailPage: React.FC = () => {
         <Button onClick={() => navigate('/fencers')}>
           ← Back to Fencers
         </Button>
-        {user?.is_admin && (
-          <Button variant="contained" color="primary" onClick={() => setDialogOpen(true)}>
-            ✏️ Edit Profile
-          </Button>
-        )}
       </Box>
 
       {/* Fencer Header */}
@@ -353,14 +336,6 @@ export const FencerDetailPage: React.FC = () => {
           )}
         </CardContent>
       </Card>
-
-      <FencerEditDialog
-        open={dialogOpen}
-        fencer={fencer}
-        clubs={clubs}
-        onClose={() => setDialogOpen(false)}
-        onSubmit={handleUpdateFencer}
-      />
     </Container>
   );
 };

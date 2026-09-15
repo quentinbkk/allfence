@@ -4,6 +4,8 @@
 
 A comprehensive web-based platform for managing fencing clubs, tournaments, rankings, and athlete data with advanced data retrieval and visualization capabilities.
 
+**🔗 Live demo:** _add your deployed Vercel URL here after deploying_ — a public, read-only showcase pre-loaded with realistic sample data (15 clubs, 600 fencers, 100 tournaments). See [Deployment](#deployment) below.
+
 ---
 
 ## Project Overview
@@ -14,7 +16,7 @@ AllFence is a full-stack application designed to organize and retrieve fencing t
 
 #### 1. **Athlete Management**
 - Complete fencer profiles with personal information, club affiliation, weapon specialization
-- Age bracket categorization (Youth, Cadet, Junior, Senior, Veteran)
+- Age bracket categorization (U11, U13, U15, Cadet, Junior, Senior)
 - Individual performance tracking and tournament history
 - Ranking system with automatic point calculations
 
@@ -36,11 +38,13 @@ AllFence is a full-stack application designed to organize and retrieve fencing t
 - Club rankings with cumulative point tracking
 - Individual fencer rankings with detailed breakdowns
 
-#### 5. **Season Simulation** (Development Tool)
+#### 5. **Season Simulation** (Local Development Only)
 - Automated season generation with configurable parameters
 - Batch tournament creation (100 tournaments per season)
 - Realistic result simulation with randomized placements
 - Complete ranking reset capability for testing
+- Only reachable with `DEMO_MODE=false` locally - the public deployment runs in
+  read-only demo mode and disables every write endpoint (see [Deployment](#deployment))
 
 #### 6. **Data Structure Documentation**
 - Interactive database schema visualization
@@ -79,55 +83,61 @@ The system uses a relational SQLite database with 6 core tables:
 
 #### **1. clubs**
 Stores fencing club information
-- `id` (INTEGER, Primary Key)
-- `name` (TEXT, Unique, Required)
-- `location` (TEXT)
-- `contact_email` (TEXT)
-- `contact_phone` (TEXT)
+- `club_id` (TEXT, Primary Key)
+- `club_name` (TEXT, Required)
+- `start_year` (INTEGER)
+- `status` (TEXT) - Values: 'Active', 'Inactive', 'Pending', 'Suspended'
+- `weapon_club` (TEXT) - Club's primary weapon specialization, if any
 
 #### **2. fencers**
-Athlete profiles with weapon and bracket classification
-- `id` (INTEGER, Primary Key)
-- `first_name` (TEXT, Required)
-- `last_name` (TEXT, Required)
-- `date_of_birth` (DATE, Required)
+Athlete profiles with weapon classification
+- `fencer_id` (INTEGER, Primary Key)
+- `first_name`, `last_name` (TEXT, Required)
+- `dob` (DATE, Required) - Age and bracket are computed from this, not stored
+- `gender` (TEXT, Required) - Values: 'M', 'F'
 - `weapon` (TEXT, Required) - Values: 'Foil', 'Epee', 'Sabre'
-- `bracket` (TEXT, Required) - Values: 'Youth', 'Cadet', 'Junior', 'Senior', 'Veteran'
-- `club_id` (INTEGER, Foreign Key → clubs.id)
+- `club_id` (TEXT, Foreign Key → clubs.club_id)
 
 #### **3. tournaments**
 Tournament metadata and configuration
-- `id` (INTEGER, Primary Key)
-- `name` (TEXT, Required)
+- `tournament_id` (INTEGER, Primary Key)
+- `tournament_name` (TEXT, Required)
 - `date` (DATE, Required)
-- `location` (TEXT, Required)
-- `weapon` (TEXT, Required)
-- `bracket` (TEXT, Required)
-- `season_id` (INTEGER, Foreign Key → seasons.id)
+- `location` (TEXT)
+- `weapon` (TEXT, Required) - 'Foil', 'Epee', 'Sabre'
+- `bracket` (TEXT, Required) - 'U11', 'U13', 'U15', 'Cadet', 'Junior', 'Senior'
+- `gender` (TEXT) - 'M', 'F', or null for open
+- `competition_type` (TEXT) - 'Local', 'Regional', 'National', 'Championship', 'International' (affects point weighting)
+- `status` (TEXT) - 'Upcoming', 'Registration Open', 'In Progress', 'Completed', 'Cancelled'
+- `max_participants` (INTEGER), `description` (TEXT)
+- `season_id` (INTEGER, Foreign Key → seasons.season_id)
 
 #### **4. tournament_results**
 Individual performance records
-- `id` (INTEGER, Primary Key)
-- `tournament_id` (INTEGER, Foreign Key → tournaments.id)
-- `fencer_id` (INTEGER, Foreign Key → fencers.id)
+- `result_id` (INTEGER, Primary Key)
+- `tournament_id` (INTEGER, Foreign Key → tournaments.tournament_id)
+- `fencer_id` (INTEGER, Foreign Key → fencers.fencer_id)
 - `placement` (INTEGER, Required)
-- `points_earned` (INTEGER, Required)
+- `points_awarded` (INTEGER, Default: 0)
+- `pool_record` (TEXT), `seeding` (INTEGER) - optional
 
 #### **5. rankings**
-Current ranking state for all fencers
-- `id` (INTEGER, Primary Key)
-- `fencer_id` (INTEGER, Foreign Key → fencers.id, Unique)
+Current ranking state - one row per fencer per age bracket
+- `ranking_id` (INTEGER, Primary Key)
+- `fencer_id` (INTEGER, Foreign Key → fencers.fencer_id)
+- `bracket_name` (TEXT, Required) - 'U11', 'U13', 'U15', 'Cadet', 'Junior', or 'Senior'
 - `points` (INTEGER, Default: 0)
-- `weapon` (TEXT, Required)
-- `bracket` (TEXT, Required)
-- `club_id` (INTEGER, Foreign Key → clubs.id)
+- `tournaments_attended` (INTEGER, Default: 0)
 
 #### **6. seasons**
 Season definitions for tournament grouping
-- `id` (INTEGER, Primary Key)
+- `season_id` (INTEGER, Primary Key)
 - `name` (TEXT, Unique, Required)
-- `start_date` (DATE, Required)
-- `end_date` (DATE, Required)
+- `start_date`, `end_date` (DATE, Required)
+- `status` (TEXT) - 'Active', 'Completed', 'Upcoming'
+- `description` (TEXT)
+
+The exact, always-current schema (including constraints and indexes) is also rendered live from the running app on the **Data Structure** page.
 
 ### Entity Relationships
 
@@ -142,47 +152,17 @@ seasons (1) ────< (Many) tournaments
 
 ### API Architecture
 
-The backend exposes 20+ RESTful endpoints organized by resource type:
+The backend exposes RESTful endpoints organized by resource type (fencers, clubs,
+tournaments, rankings, seasons), each supporting filtered `GET` reads plus
+`POST`/`PUT`/`DELETE` mutations for tournament/fencer management, registration,
+and result recording. The full, always-current endpoint list is rendered live
+from the running app on the **Data Structure** page's "API Endpoints" tab.
 
-#### **Authentication** (`/api/auth`)
-- `POST /login` - User authentication
-- `POST /logout` - Session termination
-
-#### **Fencers** (`/api/fencers`)
-- `GET /` - List all fencers (filterable by club, weapon, bracket)
-- `GET /{id}` - Get fencer details
-- `GET /{id}/results` - Get tournament history
-- `GET /{id}/upcoming-tournaments` - Get scheduled tournaments
-- `POST /` - Create new fencer
-- `PUT /{id}` - Update fencer
-- `DELETE /{id}` - Delete fencer
-
-#### **Clubs** (`/api/clubs`)
-- `GET /` - List all clubs
-- `GET /{id}` - Get club details
-- `GET /{id}/fencers` - Get club members
-- `POST /` - Create new club
-- `PUT /{id}` - Update club
-- `DELETE /{id}` - Delete club
-
-#### **Tournaments** (`/api/tournaments`)
-- `GET /` - List tournaments (filterable by status, weapon, bracket)
-- `GET /{id}` - Get tournament details
-- `POST /` - Create tournament
-- `PUT /{id}` - Update tournament
-- `DELETE /{id}` - Delete tournament
-
-#### **Rankings** (`/api/rankings`)
-- `GET /` - Get individual rankings (filterable by weapon, bracket)
-- `GET /clubs` - Get club rankings (filterable by weapon)
-- `GET /clubs/cumulative-points` - Get historical club performance data
-- `POST /reset` - Reset all rankings (development)
-
-#### **Seasons** (`/api/seasons`)
-- `GET /` - List all seasons
-- `GET /{id}` - Get season details
-- `POST /` - Create season
-- `POST /{id}/simulate` - Simulate season (development)
+**Read-only public deployment:** the live demo runs with `DEMO_MODE=true`
+(see [Deployment](#deployment)), which rejects every non-`GET` request before
+it reaches the database - this is a public showcase with pre-loaded sample
+data, not an editable instance. Clone the repo and run it locally to use the
+full read/write functionality.
 
 ### Data Flow & State Management
 
@@ -294,8 +274,11 @@ npm run dev
 4. Access application:
 ```
 Open browser to http://localhost:5173
-Default credentials: admin / admin
 ```
+No login is required - the app is open access. Mutating actions (creating
+tournaments, recording results, season simulation) hit the backend directly;
+set `DEMO_MODE=false` in `backend/.env` to enable them locally (see
+[Deployment](#deployment) for why they're disabled by default).
 
 ---
 
@@ -303,21 +286,20 @@ Default credentials: admin / admin
 
 ### Viewing Rankings
 1. Navigate to **"Rankings"** from sidebar
-2. Filter by weapon (Foil, Épée, Sabre) and bracket (Youth, Cadet, Junior, Senior, Veteran)
+2. Filter by weapon (Foil, Épée, Sabre) and bracket (U11, U13, U15, Cadet, Junior, Senior)
 3. View individual fencer rankings with points and club affiliation
 4. Click on any fencer to view detailed profile and tournament history
 
 ### Exploring Club Performance
 1. Navigate to **"Club Rankings"** from sidebar
 2. Select weapon type to view club-specific rankings
-3. Review **"Club Rankings Over Time"** chart showing cumulative point progression
+3. Review the cumulative points chart showing club performance progression
 4. Compare performance across all clubs in unified timeline
 
-### Managing Tournaments
+### Browsing Tournaments
 1. Navigate to **"Tournaments"** from sidebar
-2. View list of all tournaments (filterable by status)
-3. Click on tournament to view details and participants
-4. Create new tournaments via **"Create Tournament"** button
+2. View list of all tournaments (filterable by status, weapon, bracket)
+3. Click on a tournament to view details, final standings, and participants
 
 ### Reviewing Data Structure
 1. Navigate to **"Data Structure"** from sidebar
@@ -325,30 +307,27 @@ Default credentials: admin / admin
 3. View **Entity Relationships** tab for relationship diagrams
 4. View **API Endpoints** tab for complete API documentation
 
-### Simulating Seasons (Development)
-1. Navigate to **"Season Simulation"** from sidebar
-2. Click **"Simulate Season"** to generate 100 tournaments with results
-3. View updated rankings and statistics
-4. Use **"Reset All Rankings"** to clear data and start fresh
+### Simulating Seasons (Local Development Only)
+Not exposed in the UI - it's a backend admin capability, disabled entirely on the
+public deployment (see [Deployment](#deployment)). To use it locally, set
+`DEMO_MODE=false` in `backend/.env`, restart the backend, and either run
+`python backend/scripts/simulate_season.py` or call the
+`POST /api/seasons/{id}/simulate` and `POST /api/rankings/reset` endpoints directly.
 
 ---
 
 ## Sample Data
 
-The database includes pre-populated realistic data:
+The database ships pre-populated with realistic synthetic data
+(`backend/data/export/*.json`, built into `backend/data/database/fencing_management.db`
+by `backend/scripts/build_demo_db.py` - see [Deployment](#deployment)):
 
-- **15 Clubs** across US locations
+- **15 Clubs** across major US cities (e.g. Chicago Athletic Club, Houston Fencing Club,
+  Phoenix Salle d'Armes, Seattle United Fencing Academy)
 - **600 Fencers** distributed across:
   - 3 weapons (Foil, Épée, Sabre)
-  - 5 age brackets (Youth, Cadet, Junior, Senior, Veteran)
-- **Variable tournament history** (generated via simulation)
-
-Sample clubs include:
-- Bay Area Fencing Club (San Francisco)
-- Golden Gate Fencing Center (San Francisco)
-- Peninsula Fencing Academy (Redwood City)
-- Silicon Valley Fencing Center (San Jose)
-- Mission Fencing Academy (San Francisco)
+  - 6 age brackets (U11, U13, U15, Cadet, Junior, Senior)
+- **100 completed tournaments** with recorded results and rankings
 
 ---
 
@@ -376,12 +355,12 @@ pytest tests/
 ```
 
 ### Database Migrations
-The database is pre-populated. To reset:
+The database ships pre-populated from `backend/data/export/*.json`. To rebuild it
+from scratch (e.g. after editing the export files):
 ```bash
-# Use Season Simulation page in UI to reset rankings
-# Or manually delete: backend/data/database/fencing_management.db
-# Run app.py to regenerate with schema only
+python backend/scripts/build_demo_db.py
 ```
+This deletes and regenerates `backend/data/database/fencing_management.db`.
 
 ### Code Quality
 - TypeScript for type safety on frontend
@@ -394,33 +373,68 @@ The database is pre-populated. To reset:
 ## Project Structure
 
 ```
-info_202_allfence/
-├── allfence-frontend/          # React TypeScript frontend
+allfence/
+├── vercel.json                 # Single-deploy config (static frontend + Python API)
+├── allfence-frontend/          # React + TypeScript frontend
 │   ├── src/
-│   │   ├── api/               # RTK Query API slices
-│   │   ├── components/        # Reusable UI components
-│   │   ├── pages/             # Page-level components
-│   │   ├── store/             # Redux store configuration
-│   │   └── types/             # TypeScript type definitions
-│   ├── public/                # Static assets
-│   └── package.json           # Frontend dependencies
+│   │   ├── api/                # RTK Query API slices (read-only queries)
+│   │   ├── components/         # Reusable UI components
+│   │   ├── pages/              # Page-level components (route-level lazy-loaded)
+│   │   ├── store/               # Redux store configuration
+│   │   └── types/               # TypeScript type definitions
+│   └── package.json            # Frontend dependencies
 │
 ├── backend/                    # Flask Python backend
 │   ├── src/
-│   │   ├── models.py          # SQLAlchemy models
-│   │   ├── database.py        # Database initialization
+│   │   ├── models.py           # SQLAlchemy models
+│   │   ├── database.py         # Database connection/session management
 │   │   ├── tournament_management.py  # Tournament logic
-│   │   ├── ranking.py         # Ranking calculations
-│   │   └── ingestion.py       # Data import utilities
-│   ├── app.py                 # Flask application entry point
+│   │   ├── ranking.py          # Ranking calculations
+│   │   └── ingestion.py        # Data import utilities
+│   ├── app.py                  # Flask application entry point (also the Vercel API function)
 │   ├── data/
-│   │   └── database/          # SQLite database file
-│   └── tests/                 # Backend unit tests
+│   │   ├── export/             # JSON data export - source of truth for demo data
+│   │   └── database/           # Pre-built SQLite demo database (generated, checked in)
+│   ├── scripts/
+│   │   └── build_demo_db.py    # Rebuilds the demo database from data/export/
+│   └── tests/                  # Backend unit tests
 │
-└── data/                       # Data generation scripts
-    ├── synth.py               # Synthetic data generator
-    └── csv/                   # CSV source files
+└── data/                       # Synthetic data generation scripts
+    ├── synth.py                # Synthetic data generator
+    └── csv/                    # CSV source files
 ```
+
+---
+
+## Deployment
+
+The app is deployed as a single [Vercel](https://vercel.com) project: the React
+build is served as static files and the Flask app runs as a Python serverless
+function, both from the same domain (via `vercel.json`), so there's no CORS
+setup and no separate backend URL to configure.
+
+**This is a public, read-only demo.** With no login system, every endpoint is
+reachable by anyone with the URL - so the backend runs with `DEMO_MODE=true`
+(the default), which rejects every `POST`/`PUT`/`DELETE` request with a 403
+before it touches the database. The demo data itself
+(`backend/data/database/fencing_management.db`, built by
+`backend/scripts/build_demo_db.py` from `backend/data/export/*.json`) is
+committed to the repo and bundled read-only into the deployment.
+
+### Deploy your own copy
+1. Push this repo to GitHub.
+2. In the [Vercel dashboard](https://vercel.com/new), import the repo - it will
+   detect `vercel.json` and deploy both the frontend and the API automatically.
+   No environment variables are required (`DEMO_MODE` defaults to `true`).
+3. To update the demo data, edit `backend/data/export/*.json`, run
+   `python backend/scripts/build_demo_db.py`, commit the regenerated `.db`
+   file, and push.
+
+### Running with full read/write access
+This read-only mode only applies to the public deployment. To run the app
+locally with tournaments, results, and season simulation enabled, set
+`DEMO_MODE=false` in `backend/.env` (see `backend/.env.example`) and follow
+the [Installation & Setup](#installation--setup) instructions above.
 
 ---
 
@@ -440,61 +454,6 @@ This project is submitted as academic coursework for UC Berkeley School of Infor
 
 ## 🙏 Acknowledgments
 
-<<<<<<< HEAD
-### Import from Python
-
-```python
-from src.database import get_session_context
-from src.models import Fencer, Tournament
-from src.tournament_management import create_tournament
-
-# Use the system
-with get_session_context() as session:
-    fencers = session.query(Fencer).all()
-    # ... your code
-```
-
-### Run Scripts
-
-```bash
-# Import CSV data
-python scripts/migrate_csv_to_db.py
-
-# Fix bracket assignments
-python scripts/fix_brackets.py
-
-# Quick test
-python tests/quick_test.py
-```
-
-## Features
-
-- Database models for Fencers, Clubs, Rankings, Tournaments
-- Automatic bracket assignment based on age
-- Tournament management with weighted point system
-- CSV import for fencers and tournament results
-- Comprehensive test suite
-
-## Documentation
-
-See the `docs/` directory for detailed documentation:
-- `README_PHASE1.md` - Database models overview
-- `TOURNAMENT_SYSTEM.md` - Tournament system guide
-- `TESTING_GUIDE.md` - How to test functionality
-- `PHASE3_WEB_INTERFACE.md` - Next steps for web interface
-
-## Requirements
-
-- Python 3.8+
-- SQLAlchemy
-- pandas
-- (See requirements.txt when created)
-
-## Development
-
-All core code is in `src/`. Tests are in `tests/`. Scripts in `scripts/` can be run directly.
-
-=======
 - UC Berkeley School of Information - INFO 202 Course Staff
 - Flask and React communities for excellent documentation
 - Material-UI and Recharts for visualization libraries

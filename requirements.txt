@@ -1,3 +1,6 @@
+# Dependencies for the api/index.py serverless function (Vercel looks for
+# requirements.txt at the project root). Keep this in sync with
+# backend/requirements.txt, which is the copy used for local development.
 blinker==1.9.0
 certifi==2025.11.12
 charset-normalizer==3.4.4

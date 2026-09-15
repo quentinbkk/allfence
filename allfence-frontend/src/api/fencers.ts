@@ -1,20 +1,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { Fencer, FencerFilters } from '../types';
 
-const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:5001/api';
+const API_URL = (import.meta.env.VITE_API_URL as string) || '/api';
 
 export const fencersApi = createApi({
   reducerPath: 'fencersApi',
-  baseQuery: fetchBaseQuery({
-    baseUrl: API_URL,
-    prepareHeaders: (headers) => {
-      const token = localStorage.getItem('authToken');
-      if (token) {
-        headers.set('Authorization', `Bearer ${token}`);
-      }
-      return headers;
-    },
-  }),
+  baseQuery: fetchBaseQuery({ baseUrl: API_URL }),
   tagTypes: ['Fencer'],
   endpoints: (builder) => ({
     getFencers: builder.query<Fencer[], FencerFilters | void>({
@@ -37,15 +28,6 @@ export const fencersApi = createApi({
       providesTags: (_, __, id) => [{ type: 'Fencer', id }],
     }),
 
-    updateFencer: builder.mutation<Fencer, { id: number; data: Partial<Fencer> }>({
-      query: ({ id, data }) => ({
-        url: `/fencers/${id}`,
-        method: 'PUT',
-        body: data,
-      }),
-      invalidatesTags: (_, __, { id }) => [{ type: 'Fencer', id }],
-    }),
-
     getFencerResults: builder.query<any[], number>({
       query: (id) => `/fencers/${id}/results`,
       providesTags: (_, __, id) => [{ type: 'Fencer', id }],
@@ -61,7 +43,6 @@ export const fencersApi = createApi({
 export const {
   useGetFencersQuery,
   useGetFencerByIdQuery,
-  useUpdateFencerMutation,
   useGetFencerResultsQuery,
   useGetFencerUpcomingTournamentsQuery,
 } = fencersApi;

@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { Ranking, ClubRanking } from '../types';
 
-const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:5001/api';
+const API_URL = (import.meta.env.VITE_API_URL as string) || '/api';
 
 interface ClubCumulativePoint {
   date: string;
@@ -30,16 +30,7 @@ export interface FencerCumulativeData {
 
 export const rankingsApi = createApi({
   reducerPath: 'rankingsApi',
-  baseQuery: fetchBaseQuery({
-    baseUrl: API_URL,
-    prepareHeaders: (headers) => {
-      const token = localStorage.getItem('authToken');
-      if (token) {
-        headers.set('Authorization', `Bearer ${token}`);
-      }
-      return headers;
-    },
-  }),
+  baseQuery: fetchBaseQuery({ baseUrl: API_URL }),
   tagTypes: ['Ranking'],
   endpoints: (builder) => ({
     getRankings: builder.query<Ranking[], { bracket?: string; weapon?: string }>({
@@ -86,17 +77,6 @@ export const rankingsApi = createApi({
       },
       providesTags: ['Ranking'],
     }),
-
-    resetAllRankings: builder.mutation<
-      { message: string; rankings_reset: number },
-      void
-    >({
-      query: () => ({
-        url: '/rankings/reset',
-        method: 'POST',
-      }),
-      invalidatesTags: ['Ranking'],
-    }),
   }),
 });
 
@@ -106,5 +86,4 @@ export const {
   useGetClubRankingsQuery,
   useGetAllClubsCumulativePointsQuery,
   useGetTopFencersCumulativePointsQuery,
-  useResetAllRankingsMutation,
 } = rankingsApi;
